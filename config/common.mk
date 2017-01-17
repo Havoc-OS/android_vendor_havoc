@@ -48,6 +48,13 @@ PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/bin/50-havoc.sh:system/addon.d/50-havoc.sh \
     vendor/havoc/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 
+ifeq ($(AB_OTA_UPDATER),true)
+PRODUCT_COPY_FILES += \
+    vendor/havoc/prebuilt/common/bin/backuptool_ab.sh:system/bin/backuptool_ab.sh \
+    vendor/havoc/prebuilt/common/bin/backuptool_ab.functions:system/bin/backuptool_ab.functions \
+    vendor/havoc/prebuilt/common/bin/backuptool_postinstall.sh:system/bin/backuptool_postinstall.sh
+endif
+
 # Backup Services whitelist
 PRODUCT_COPY_FILES += \
     vendor/havoc/config/permissions/backup.xml:system/etc/sysconfig/backup.xml
