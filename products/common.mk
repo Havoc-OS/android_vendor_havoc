@@ -42,6 +42,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES := \
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/havoc/overlay/common
 
+# Fix Dialer
+PRODUCT_COPY_FILES +=  \
+    vendor/havoc/prebuilt/common/etc/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
+
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
