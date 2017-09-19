@@ -215,6 +215,10 @@ PRODUCT_PACKAGES += \
     wget \
     zip
 
+# Turbo
+PRODUCT_PACKAGES += \
+    Turbo
+
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images
