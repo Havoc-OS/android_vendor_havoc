@@ -1,6 +1,6 @@
 # Run init.d service on startup
 
-on post-fs-data
+on boot
     # Run sysinit
     start sysinit
 
