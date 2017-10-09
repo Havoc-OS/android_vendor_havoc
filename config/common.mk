@@ -93,6 +93,10 @@ PRODUCT_COPY_FILES += \
 # Include Havoc audio files
 include vendor/havoc/config/havoc_audio.mk
 
+# Fix Google dialer
+PRODUCT_COPY_FILES += \
+    vendor/havoc/prebuilt/common/etc/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
+
 ifneq ($(TARGET_DISABLE_LINEAGE_SDK), true)
 # Lineage SDK
 include vendor/havoc/config/lineage_sdk_common.mk
