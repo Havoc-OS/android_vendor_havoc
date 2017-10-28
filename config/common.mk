@@ -311,3 +311,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 -include vendor/cyngn/product.mk
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)
+
+# DU Utils Library
+PRODUCT_PACKAGES += \
+    org.dirtyunicorns.utils
+
+PRODUCT_BOOT_JARS += \
+    org.dirtyunicorns.utils
