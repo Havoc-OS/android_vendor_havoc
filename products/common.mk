@@ -108,3 +108,5 @@ PRODUCT_BOOT_JARS += \
 # DU Utils Library
 PRODUCT_PACKAGES += \
     org.dirtyunicorns.utils
+# Themes
+$(call inherit-product-if-exists, vendor/havoc/products/themes.mk)
