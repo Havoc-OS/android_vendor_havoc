@@ -98,6 +98,10 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     librsjni
 
+# Havoc Packages
+PRODUCT_PACKAGES += \
+    SoundPickerPrebuilt
+
 # Exchange support
 PRODUCT_PACKAGES += \
     Exchange2
