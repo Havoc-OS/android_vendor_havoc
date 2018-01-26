@@ -79,6 +79,10 @@ $(foreach size,$(bootanimation_sizes), $(call check_and_set_bootanimation,$(size
 PRODUCT_COPY_FILES += vendor/havoc/prebuilt/common/bootanimation/$(TARGET_BOOTANIMATION_NAME).zip:system/media/bootanimation.zip
 endif
 
+# APN
+PRODUCT_COPY_FILES += \
+    vendor/havoc/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+
 # Extra packages
 PRODUCT_PACKAGES += \
     LeanLauncher \
