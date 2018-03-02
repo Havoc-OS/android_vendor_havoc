@@ -9,7 +9,7 @@ EXCLUDE_SYSTEMUI_TESTS := true
 
 PRODUCT_BUILD_PROP_OVERRIDES := BUILD_DISPLAY_ID=$(TARGET_PRODUCT)-$(PLATFORM_VERSION)-$(BUILD_ID)
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     keyguard.no_require_sim=true \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
@@ -29,7 +29,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.disable_rescue=true \
     ro.config.calibration_cad=/system/etc/calibration_cad.xml
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     org.havoc.fingerprint=$(PLATFORM_VERSION)-$(BUILD_ID)-$(HAVOC_BUILD_DATE)
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES := \
