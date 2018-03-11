@@ -12,6 +12,8 @@ endif
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     keyguard.no_require_sim=true
+    persist.debug.wfd.enable=1 \
+    persist.sys.wfd.virtual=0 \
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.selinux=1
