@@ -16,8 +16,10 @@ PRODUCT_COPY_FILES += \
     $(NOTIFICATION_PATH)/CyanDoink.ogg:system/media/audio/notifications/CyanDoink.ogg \
     $(NOTIFICATION_PATH)/CyanMail.ogg:system/media/audio/notifications/CyanMail.ogg \
     $(NOTIFICATION_PATH)/CyanMessage.ogg:system/media/audio/notifications/CyanMessage.ogg \
+    $(NOTIFICATION_PATH)/DashCharge.ogg:system/media/audio/notifications/DashCharge.ogg \
     $(NOTIFICATION_PATH)/Laser.ogg:system/media/audio/notifications/Laser.ogg \
     $(NOTIFICATION_PATH)/Naughty.ogg:system/media/audio/notifications/Naughty.ogg \
+    $(NOTIFICATION_PATH)/Ping.ogg:system/media/audio/notifications/Ping.ogg \
     $(NOTIFICATION_PATH)/Pong.ogg:system/media/audio/notifications/Pong.ogg \
     $(NOTIFICATION_PATH)/Rang.ogg:system/media/audio/notifications/Rang.ogg \
     $(NOTIFICATION_PATH)/Stone.ogg:system/media/audio/notifications/Stone.ogg
