@@ -115,4 +115,8 @@
     -->
     <bool name="config_enableWifiDisplay">true</bool>
 
+    <!-- System font packages (overlay in vendor) -->
+    <string-array name="config_fontPackages" translatable="false">
+        <item>com.havoc.fonts</item>
+    </string-array>
 </resources>

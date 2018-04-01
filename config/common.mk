@@ -145,6 +145,10 @@ PRODUCT_PACKAGES += \
     Development \
     Profiles
 
+# Fonts
+PRODUCT_PACKAGES += \
+    Havoc-Fonts
+
 # Optional packages
 PRODUCT_PACKAGES += \
     libemoji \
