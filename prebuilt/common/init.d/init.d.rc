@@ -41,6 +41,8 @@ on boot
     chown system system /sys/module/lowmemorykiller/parameters/minfree
     chmod 0644 /sys/module/lowmemorykiller/parameters/minfree
 
+    setprop ro.boot.wificountrycode US
+
 # Disable ril services if noril prop is set
 on property:ro.radio.noril=1
     stop ril-daemon
