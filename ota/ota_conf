@@ -1,0 +1,7 @@
+ota_url=https://raw.githubusercontent.com/Havoc-OS/OTA/oreo/ota.xml
+release_type=Stable
+device_name=ro.havoc.device
+version_source=ro.havoc.version
+version_delimiter=-
+version_position=2
+version_format=yyyyMMdd
