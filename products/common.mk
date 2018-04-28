@@ -49,6 +49,7 @@ PRODUCT_COPY_FILES += \
 # Extra packages
 PRODUCT_PACKAGES += \
     LeanLauncher \
+    OmniJaws \
     Stk \
     Terminal
 
