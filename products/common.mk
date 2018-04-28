@@ -107,6 +107,10 @@ PRODUCT_PACKAGES += \
     Terminal \
 	Wallpapers
 
+# Havoc OTA
+PRODUCT_PACKAGES +=  \
+    HavocOTA
+   
 # Init.d script support
 PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/bin/sysinit:system/bin/sysinit \
