@@ -99,4 +99,7 @@
     <!-- Boolean indicating whether or not to revert to default country code when cellular
     radio is unable to find any MCC information to infer wifi country code from -->
     <bool translatable="false" name="config_wifi_revert_country_code_on_cellular_loss">true</bool>
+	
+    <!-- Set icon mask to circle -->
+    <string name="config_icon_mask" translatable="false">"M50 0A50 50,0,1,1,50 100A50 50,0,1,1,50 0"</string>
 </resources>
