@@ -24,7 +24,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.adb.secure=0 \
     ro.setupwizard.rotation_locked=true \
     ro.opa.eligible_device=true \
-    persist.sys.disable_rescue=true
+    persist.sys.disable_rescue=true \
+    ro.config.calibration_cad=/system/etc/calibration_cad.xml
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.havoc.version=$(PLATFORM_VERSION)-$(BUILD_ID)
@@ -82,6 +83,10 @@ endif
 # APN
 PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+
+# AR
+PRODUCT_COPY_FILES += \
+    vendor/havoc/prebuilt/common/etc/calibration_cad.xml:system/etc/calibration_cad.xml
 
 # Extra packages
 PRODUCT_PACKAGES += \
