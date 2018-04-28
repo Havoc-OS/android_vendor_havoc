@@ -90,6 +90,7 @@ PRODUCT_COPY_FILES += \
 
 # Extra packages
 PRODUCT_PACKAGES += \
+    AdAway \
     LeanLauncher \
     OmniJaws \
     Stk \
