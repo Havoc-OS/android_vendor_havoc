@@ -48,6 +48,7 @@ PRODUCT_COPY_FILES += \
 
 # Extra packages
 PRODUCT_PACKAGES += \
+    LeanLauncher \
     Stk \
     Terminal
 
