@@ -96,7 +96,8 @@ PRODUCT_PACKAGES += \
 	Markup \
     OmniJaws \
     Stk \
-    Terminal
+    Terminal \
+	Wallpapers
 
 # Init.d script support
 PRODUCT_COPY_FILES += \
