@@ -93,6 +93,7 @@ PRODUCT_PACKAGES += \
     AdAway \
 	Calculator \
     LeanLauncher \
+	Markup \
     OmniJaws \
     Stk \
     Terminal
