@@ -29,6 +29,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.havoc.version=$(PLATFORM_VERSION)-$(BUILD_ID)
+	
+# Havoc Version
+PRODUCT_VERSION = 8.1.0
+ifneq ($(HAVOC_BUILDTYPE),)
+HAVOC_VERSION := Havoc-OS-$(shell date +%Y%m%d)-$(HAVOC_BUILD)-$(HAVOC_BUILDTYPE)
+else
+HAVOC_VERSION := Havoc-OS-$(shell date +%Y%m%d)-$(HAVOC_BUILD)
+endif
 
 # Disable HDCP check
 PRODUCT_PROPERTY_OVERRIDES += \
