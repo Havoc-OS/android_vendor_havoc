@@ -163,9 +163,8 @@ PRODUCT_PACKAGES += \
     LineageSettingsProvider \
     LineageSetupWizard \
     Eleven \
+	Jelly \
     LockClock \
-    Updater \
-    WallpaperPicker \
     WeatherProvider
 
 # Custom Havoc packages
@@ -176,7 +175,8 @@ PRODUCT_PACKAGES += \
 	Markup \
 	OmniJaws \
 	OmniStyle \
-	OmniSwitch
+	OmniSwitch \
+	Wallpapers
 
 # Exchange support
 PRODUCT_PACKAGES += \
