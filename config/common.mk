@@ -173,6 +173,7 @@ PRODUCT_PACKAGES += \
     AdAway \
     Calculator \
 	Markup \
+	OmniJaws \
 	OmniSwitch
 
 # Exchange support
