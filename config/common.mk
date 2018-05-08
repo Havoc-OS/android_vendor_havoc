@@ -320,7 +320,6 @@ PRODUCT_PACKAGES +=  \
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/havoc/config/partner_gms.mk
--include vendor/cyngn/product.mk
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)
 
