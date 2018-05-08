@@ -172,6 +172,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AdAway \
     Calculator \
+	LeanLauncher \
 	Markup \
 	OmniJaws \
 	OmniStyle \
