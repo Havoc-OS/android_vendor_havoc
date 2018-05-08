@@ -306,6 +306,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     havoc.ota.version= $(shell date +%Y%m%d) \
     ro.havoc.tag=$(shell grep "refs/tags" .repo/manifest.xml  | cut -d'"' -f2 | cut -d'/' -f3)
 
+# Havoc OTA
+PRODUCT_PACKAGES +=  \
+   HavocOTA
 
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
