@@ -174,6 +174,7 @@ PRODUCT_PACKAGES += \
     Calculator \
 	Markup \
 	OmniJaws \
+	OmniStyle \
 	OmniSwitch
 
 # Exchange support
