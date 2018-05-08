@@ -171,6 +171,10 @@ PRODUCT_PACKAGES += \
     WallpaperPicker \
     WeatherProvider
 
+# Custom Havoc packages
+PRODUCT_PACKAGES += \
+    AdAway \
+
 # Exchange support
 PRODUCT_PACKAGES += \
     Exchange2

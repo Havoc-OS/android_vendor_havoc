@@ -12,6 +12,16 @@ include $(BUILD_PREBUILT)
 # Prebuilt APKs included in Havoc builds
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := AdAway
+LOCAL_MODULE_OWNER := havoc
+LOCAL_SRC_FILES := app/$(LOCAL_MODULE).apk
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX := .apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_CERTIFICATE := PRESIGNED
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := Turbo
 LOCAL_MODULE_OWNER := havoc
 LOCAL_SRC_FILES := app/$(LOCAL_MODULE).apk
