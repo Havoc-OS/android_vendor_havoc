@@ -184,17 +184,39 @@ PRODUCT_PACKAGES += \
 
 # Berry styles
 PRODUCT_PACKAGES += \
-    LineageDarkTheme \
+    LineageAmberAccent \
     LineageBlackAccent \
-    LineageBlueAccent \
+	LineageBlueGreyAccent \
     LineageBrownAccent \
+	LineageCrimsonAccent \
     LineageCyanAccent \
     LineageGreenAccent \
+    LineageGreyAccent \
+	LineageMidnightBlueAccent \
+	LineageMintAccent \
+	LineageNeonBlueAccent \
+	LineageNeonGreenAccent \
+	LineageNeonOrangeAccent \
+	LineageNeonPinkAccent \
+	LineageNeonPurpleAccent \
+	LineageNeonYellowAccent \
     LineageOrangeAccent \
     LineagePinkAccent \
     LineagePurpleAccent \
     LineageRedAccent \
+    LineageTealAccent \
+    LineageWhiteAccent \
     LineageYellowAccent
+
+# Default dark theme
+PRODUCT_PACKAGES += \
+    DefaultDark-System \
+    DefaultDark-SystemUI \
+    DefaultDark-Settings \
+    DefaultDark-LineageParts \
+    DefaultBlack-System \
+    DefaultBlack-SystemUI \
+    DefaultBlack-Settings
 
 # Extra tools in Havoc
 PRODUCT_PACKAGES += \
