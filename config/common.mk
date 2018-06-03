@@ -175,11 +175,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AdAway \
     Calculator \
-	LeanLauncher \
 	Markup \
 	OmniJaws \
 	OmniStyle \
 	OmniSwitch \
+	RPL \
 	Wallpapers
 
 # Exchange support
@@ -212,15 +212,14 @@ PRODUCT_PACKAGES += \
     LineageWhiteAccent \
     LineageYellowAccent
 
-# Default dark theme
+# Havoc dark theme
 PRODUCT_PACKAGES += \
-    DefaultDark-System \
-    DefaultDark-SystemUI \
-    DefaultDark-Settings \
-    DefaultDark-LineageParts \
-    DefaultBlack-System \
-    DefaultBlack-SystemUI \
-    DefaultBlack-Settings
+    System_Dark \
+    SystemUI_Dark \
+    Settings_Dark \
+    System_Black \
+    SystemUI_Black \
+    Settings_Black
 
 # Extra tools in Havoc
 PRODUCT_PACKAGES += \
