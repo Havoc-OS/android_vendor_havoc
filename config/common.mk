@@ -221,6 +221,11 @@ PRODUCT_PACKAGES += \
     SystemUI_Black \
     Settings_Black
 
+# Analog clocks
+PRODUCT_PACKAGES += \
+    AnalogDeadpool \
+    AnalogDu
+	
 # Extra tools in Havoc
 PRODUCT_PACKAGES += \
     7z \
