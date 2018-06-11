@@ -27,6 +27,7 @@
         <item>@string/lockscreen_clock_selection_sammy_bold</item>
         <item>@string/lockscreen_clock_selection_analog</item>
         <item>@string/lockscreen_clock_selection_analog_deadpool</item>
+        <item>@string/lockscreen_clock_selection_analog_deepnight</item>
         <item>@string/lockscreen_clock_selection_analog_du</item>
     </string-array>
 
@@ -38,5 +39,6 @@
         <item>4</item>
         <item>5</item>
         <item>6</item>
+        <item>7</item>
     </string-array>
 </resources>

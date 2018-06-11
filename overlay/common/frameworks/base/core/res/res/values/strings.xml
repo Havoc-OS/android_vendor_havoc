@@ -16,6 +16,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="custom_clock_styles" translatable="false">
-        digital,digital_bold,sammy,sammy_bold,analog,com.analog.clocks.deadpool,com.analog.clocks.du
+        digital,digital_bold,sammy,sammy_bold,analog,com.analog.clocks.deadpool,com.analog.clocks.deepnightclock,com.analog.clocks.du
     </string>
 </resources>
