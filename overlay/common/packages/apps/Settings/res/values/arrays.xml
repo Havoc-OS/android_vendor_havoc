@@ -30,6 +30,7 @@
         <item>@string/lockscreen_clock_selection_analog_deadpool</item>
         <item>@string/lockscreen_clock_selection_analog_deepnight</item>
         <item>@string/lockscreen_clock_selection_analog_spiderman</item>
+        <item>@string/lockscreen_clock_selection_analog_transparent</item>
         <item>@string/lockscreen_clock_selection_analog_white</item>
     </string-array>
 
@@ -44,5 +45,6 @@
         <item>7</item>
         <item>8</item>
         <item>9</item>
+        <item>10</item>
     </string-array>
 </resources>
