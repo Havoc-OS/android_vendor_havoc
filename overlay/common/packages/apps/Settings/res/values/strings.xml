@@ -21,7 +21,6 @@
     <string name="help_url_fingerprint" translatable="false">https://support.google.com</string>
 
     <string name="lockscreen_clock_selection_analog_deadpool">Analog (Deadpool)</string>
-    <string name="lockscreen_clock_selection_analog_deepnight">Analog (deep night)</string>
-    <string name="lockscreen_clock_selection_analog_du">Analog (DU)</string>
+    <string name="lockscreen_clock_selection_analog_deepnight">Analog (Deep night)</string>
 </resources>
 

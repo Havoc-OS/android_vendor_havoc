@@ -28,7 +28,6 @@
         <item>@string/lockscreen_clock_selection_analog</item>
         <item>@string/lockscreen_clock_selection_analog_deadpool</item>
         <item>@string/lockscreen_clock_selection_analog_deepnight</item>
-        <item>@string/lockscreen_clock_selection_analog_du</item>
     </string-array>
 
     <string-array name="lockscreen_clock_selection_values" translatable="false">
@@ -39,6 +38,5 @@
         <item>4</item>
         <item>5</item>
         <item>6</item>
-        <item>7</item>
     </string-array>
 </resources>
