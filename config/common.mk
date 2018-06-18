@@ -225,7 +225,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AnalogDeadpool \
     AnalogDeepNight \
-    AnalogSpiderman
+    AnalogSpiderman \
+    AnalogWhite
 	
 # Extra tools in Havoc
 PRODUCT_PACKAGES += \
