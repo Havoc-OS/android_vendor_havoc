@@ -180,6 +180,7 @@ PRODUCT_PACKAGES += \
 	OmniStyle \
 	OmniSwitch \
 	RPL \
+	WallpaperPicker \
 	Wallpapers
 
 # Exchange support
