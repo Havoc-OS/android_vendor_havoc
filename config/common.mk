@@ -173,11 +173,9 @@ PRODUCT_PACKAGES += \
 
 # Custom Havoc packages
 PRODUCT_PACKAGES += \
-    AdAway \
     Calculator \
 	Markup \
 	OmniJaws \
-	OmniStyle \
 	OmniSwitch \
 	RPL \
 	WallpaperPicker \
@@ -258,10 +256,6 @@ PRODUCT_PACKAGES += \
     vim \
     wget \
     zip
-
-# Turbo
-PRODUCT_PACKAGES += \
-    Turbo
 
 # Charger
 PRODUCT_PACKAGES += \
