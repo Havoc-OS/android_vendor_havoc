@@ -788,7 +788,7 @@ function oat2dex() {
     fi
 
     if [ -z "$CDEXCONVERTER" ]; then
-        export CDEXCONVERTER="$LINEAGE_ROOT"/vendor/lineage/build/tools/"$HOST"/compact_dex_converter
+        export CDEXCONVERTER="$HAVOC_ROOT"/vendor/havoc/build/tools/"$HOST"/compact_dex_converter
     fi
 
     # Extract existing boot.oats to the temp folder
