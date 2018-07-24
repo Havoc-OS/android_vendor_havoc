@@ -147,7 +147,6 @@ endif
 
 # Required Havoc packages
 PRODUCT_PACKAGES += \
-    BluetoothExt \
     LineageParts \
     Development \
     Profiles
