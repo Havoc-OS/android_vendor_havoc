@@ -53,6 +53,12 @@ PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/bin/backuptool_ab.sh:system/bin/backuptool_ab.sh \
     vendor/havoc/prebuilt/common/bin/backuptool_ab.functions:system/bin/backuptool_ab.functions \
     vendor/havoc/prebuilt/common/bin/backuptool_postinstall.sh:system/bin/backuptool_postinstall.sh
+    vendor/havoc/prebuilt/addon.d/69-gapps.sh:system/addon.d/69-gapps.sh
+else
+PRODUCT_COPY_FILES += \
+    vendor/havoc/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/havoc/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/havoc/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 endif
 
 # Backup Services whitelist
