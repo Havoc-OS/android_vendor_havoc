@@ -25,6 +25,8 @@
         <item>@string/lockscreen_clock_selection_digital_bold</item>
         <item>@string/lockscreen_clock_selection_sammy</item>
         <item>@string/lockscreen_clock_selection_sammy_bold</item>
+        <item>@string/lockscreen_clock_selection_sammy_accent</item>
+        <item>@string/lockscreen_clock_selection_sammy_accent_alt</item>
         <item>@string/lockscreen_clock_selection_analog</item>
         <item>@string/lockscreen_clock_selection_analog_avengers</item>
         <item>@string/lockscreen_clock_selection_analog_deadpool</item>
@@ -46,5 +48,7 @@
         <item>8</item>
         <item>9</item>
         <item>10</item>
+        <item>11</item>
+        <item>12</item>
     </string-array>
 </resources>

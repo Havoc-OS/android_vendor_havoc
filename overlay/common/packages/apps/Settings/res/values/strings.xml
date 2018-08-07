@@ -20,6 +20,13 @@
     <!-- Help URL, Fingerprint [DO NOT TRANSLATE] -->
     <string name="help_url_fingerprint" translatable="false">https://support.google.com</string>
 
+    <string name="lockscreen_clock_selection_digital">Default</string> 
+    <string name="lockscreen_clock_selection_digital_bold">Digital (Bold)</string> 
+    <string name="lockscreen_clock_selection_sammy">Sammy</string> 
+    <string name="lockscreen_clock_selection_sammy_bold">Sammy (Bold)</string> 
+    <string name="lockscreen_clock_selection_sammy_accent">Sammy Accent</string>
+    <string name="lockscreen_clock_selection_sammy_accent_alt">Sammy Accent (Alternate)</string>
+    <string name="lockscreen_clock_selection_analog">Analog</string> 
     <string name="lockscreen_clock_selection_analog_avengers">Analog (Avengers)</string>
     <string name="lockscreen_clock_selection_analog_deadpool">Analog (Deadpool)</string>
     <string name="lockscreen_clock_selection_analog_deepnight">Analog (Deep night)</string>
