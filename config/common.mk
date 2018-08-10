@@ -177,6 +177,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Calculator \
 	Markup \
+	OmniBrain \
 	OmniJaws \
 	OmniSwitch \
 	RPL \
