@@ -179,6 +179,7 @@ PRODUCT_PACKAGES += \
 	Markup \
 	OmniBrain \
 	OmniJaws \
+	OmniLib \
 	OmniSwitch \
 	RPL \
 	WallpaperPicker \
