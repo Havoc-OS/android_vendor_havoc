@@ -101,6 +101,7 @@ PRODUCT_COPY_FILES += \
 # Extra packages
 PRODUCT_PACKAGES += \
     Launcher3 \
+    MarkupGoogle \
     SoundPicker \
     Terminal \
     WallpaperPickerGooglePrebuilt \
@@ -110,6 +111,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.ime.theme_id=5
 
+# Markup libs
+PRODUCT_COPY_FILES += \
+    vendor/havoc/lib/libsketchology_native.so:system/lib/libsketchology_native.so \
+    vendor/havoc/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so
+	
 # Init.d script support
 PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/bin/sysinit:system/bin/sysinit \
