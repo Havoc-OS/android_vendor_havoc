@@ -3,6 +3,8 @@ PRODUCT_NAME := havoc
 PRODUCT_BRAND := havoc
 PRODUCT_DEVICE := generic
 
+HAVOC_BUILD_DATE := $(shell date -u +%Y%m%d-%H%M)
+
 EXCLUDE_SYSTEMUI_TESTS := true
 
 PRODUCT_BUILD_PROP_OVERRIDES := BUILD_DISPLAY_ID=$(TARGET_PRODUCT)-$(PLATFORM_VERSION)-$(BUILD_ID)
@@ -28,7 +30,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.calibration_cad=/system/etc/calibration_cad.xml
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.havoc.version=$(PLATFORM_VERSION)-$(BUILD_ID)
+    org.havoc.fingerprint=$(PLATFORM_VERSION)-$(BUILD_ID)-$(HAVOC_BUILD_DATE)
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES := \
     ro.adb.secure=0 \
