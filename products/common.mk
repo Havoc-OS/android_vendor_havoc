@@ -98,6 +98,10 @@ PRODUCT_PACKAGES += \
     Stk \
     Terminal
 
+# Set Pixel blue light theme on Gboard
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.com.google.ime.theme_id=5
+
 # Init.d script support
 PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/bin/sysinit:system/bin/sysinit \
