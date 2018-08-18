@@ -122,7 +122,8 @@ endif
 PRODUCT_PACKAGES += \
     PixelLauncher \
     SoundPickerPrebuilt \
-    Turbo
+    Turbo \
+    WallpaperPickerGooglePrebuilt
 
 # Permissions
 PRODUCT_COPY_FILES += \
