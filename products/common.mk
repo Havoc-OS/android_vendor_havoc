@@ -24,23 +24,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.adb.secure=0 \
     ro.setupwizard.rotation_locked=true \
     ro.opa.eligible_device=true \
-    persist.sys.disable_rescue=true \
-    ro.config.calibration_cad=/system/etc/calibration_cad.xml
+    persist.sys.disable_rescue=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.havoc.version=$(PLATFORM_VERSION)-$(BUILD_ID)
-	
-# Havoc Version
-PRODUCT_VERSION = 8.1.0
-ifneq ($(HAVOC_BUILDTYPE),)
-HAVOC_VERSION := Havoc-OS-$(shell date +%Y%m%d)-$(HAVOC_BUILD)-$(HAVOC_BUILDTYPE)
-else
-HAVOC_VERSION := Havoc-OS-$(shell date +%Y%m%d)-$(HAVOC_BUILD)
-endif
-
-# Disable HDCP check
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.wfd.nohdcp=1
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES := \
     ro.adb.secure=0 \
@@ -88,50 +75,34 @@ $(foreach size,$(bootanimation_sizes), $(call check_and_set_bootanimation,$(size
 PRODUCT_COPY_FILES += vendor/havoc/prebuilt/common/bootanimation/$(TARGET_BOOTANIMATION_NAME).zip:system/media/bootanimation.zip
 endif
 
+# Latin IME lib - gesture typing
+ifeq ($(TARGET_ARCH),arm64)
+PRODUCT_COPY_FILES += \
+    vendor/havoc/prebuilt/common/lib64/libjni_latinimegoogle.so:system/lib64/libjni_latinimegoogle.so \
+    vendor/havoc/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
+else
+PRODUCT_COPY_FILES += \
+    vendor/havoc/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
+endif
+
 # APN
 PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
-# AR
-PRODUCT_COPY_FILES += \
-    vendor/havoc/prebuilt/common/etc/calibration_cad.xml:system/etc/calibration_cad.xml
-
 # Extra packages
 PRODUCT_PACKAGES += \
-    AdAway \
-	Calculator \
-    LeanLauncher \
-	Markup \
-    OmniJaws \
+    Launcher3 \
     Stk \
-    Terminal \
-	Wallpapers
+    Terminal
 
-# Havoc OTA
-PRODUCT_PACKAGES +=  \
-    HavocOTA
-   
 # Init.d script support
 PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/bin/sysinit:system/bin/sysinit \
-    vendor/havoc/prebuilt/common/init.d/00banner:system/etc/init.d/00banner \
-    vendor/havoc/prebuilt/common/init.d/init.d.rc:root/init.d.rc
+    vendor/havoc/prebuilt/common/etc/init/havoc-system.rc:system/etc/init/havoc-system.rc \
+    vendor/havoc/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/addon.d/50-havoc.sh:system/addon.d/50-havoc.sh \
     vendor/havoc/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/havoc/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions
-
-PRODUCT_COPY_FILES += \
-    vendor/havoc/prebuilt/common/bin/clean_cache.sh:system/bin/clean_cache.sh
-
-# DU Utils Library
-PRODUCT_BOOT_JARS += \
-    org.dirtyunicorns.utils
-
-# DU Utils Library
-PRODUCT_PACKAGES += \
-    org.dirtyunicorns.utils
-# Themes
-$(call inherit-product-if-exists, vendor/havoc/products/themes.mk)
