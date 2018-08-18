@@ -96,7 +96,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Launcher3 \
     Stk \
-    Terminal
+    Terminal \
+    WallpaperPickerGooglePrebuilt
 
 # Set Pixel blue light theme on Gboard
 PRODUCT_PROPERTY_OVERRIDES += \
