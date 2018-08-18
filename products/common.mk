@@ -95,7 +95,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Launcher3 \
     Stk \
-    Terminal
+    Terminal \
+    WallpaperPickerGooglePrebuilt
 
 # Init.d script support
 PRODUCT_COPY_FILES += \
