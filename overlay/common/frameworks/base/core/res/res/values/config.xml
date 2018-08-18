@@ -102,4 +102,9 @@
 	
     <!-- Set icon mask to circle -->
     <string name="config_icon_mask" translatable="false">"M50 0A50 50,0,1,1,50 100A50 50,0,1,1,50 0"</string>
+
+    <!-- Misc -->
+    <bool name="config_smart_battery_available">true</bool>
+    <bool name="config_swipe_up_gesture_setting_available">true</bool>
+    <string name="config_recentsComponentName">com.google.android.apps.nexuslauncher/com.android.quickstep.RecentsActivity</string>
 </resources>
