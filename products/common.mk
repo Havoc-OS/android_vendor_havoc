@@ -103,7 +103,8 @@ PRODUCT_PACKAGES += \
     Launcher3 \
     SoundPicker \
     Terminal \
-    WallpaperPickerGooglePrebuilt
+    WallpaperPickerGooglePrebuilt \
+    WellbeingPrebuilt
 
 # Set Pixel blue light theme on Gboard
 PRODUCT_PROPERTY_OVERRIDES += \
