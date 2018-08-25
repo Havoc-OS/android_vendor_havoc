@@ -29,6 +29,12 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.sys.disable_rescue=true \
     ro.config.calibration_cad=/system/etc/calibration_cad.xml
 
+# Default notification/alarm sounds
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.config.ringtone=The_big_adventure.ogg \
+    ro.config.notification_sound=Ping.ogg \
+    ro.config.alarm_alert=Spokes.ogg
+
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     org.havoc.fingerprint=$(PLATFORM_VERSION)-$(BUILD_ID)-$(HAVOC_BUILD_DATE)
 
