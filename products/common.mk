@@ -100,6 +100,7 @@ PRODUCT_COPY_FILES += \
 # Extra packages
 PRODUCT_PACKAGES += \
     Calculator \
+    DeskClock \
     PixelLauncher \
     SoundPicker \
     Stk \
