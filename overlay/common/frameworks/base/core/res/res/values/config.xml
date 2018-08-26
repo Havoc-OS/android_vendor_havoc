@@ -115,4 +115,11 @@
     <bool name="config_smart_battery_available">true</bool>
     <bool name="config_swipe_up_gesture_setting_available">true</bool>
     <string name="config_recentsComponentName">com.google.android.apps.nexuslauncher/com.android.quickstep.RecentsActivity</string>
+
+    <!-- Fonts -->
+    <string name="config_headlineFontFamily">google-sans</string>
+    <string name="config_headlineFontFamilyLight">google-sans</string>
+    <string name="config_headlineFontFeatureSettings">ss03</string>
+    <string name="config_headlineFontFamilyMedium">google-sans-medium</string>
+
 </resources>

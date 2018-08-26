@@ -109,6 +109,15 @@ PRODUCT_PACKAGES += \
     WallpaperPickerGooglePrebuilt \
     WellbeingPrebuilt
 
+# Fonts
+PRODUCT_COPY_FILES += \
+    vendor/havoc/fonts/GoogleSans-Regular.ttf:system/fonts/GoogleSans-Regular.ttf \
+    vendor/havoc/fonts/GoogleSans-Medium.ttf:system/fonts/GoogleSans-Medium.ttf \
+    vendor/havoc/fonts/GoogleSans-MediumItalic.ttf:system/fonts/GoogleSans-MediumItalic.ttf \
+    vendor/havoc/fonts/GoogleSans-Italic.ttf:system/fonts/GoogleSans-Italic.ttf \
+    vendor/havoc/fonts/GoogleSans-Bold.ttf:system/fonts/GoogleSans-Bold.ttf \
+    vendor/havoc/fonts/GoogleSans-BoldItalic.ttf:system/fonts/GoogleSans-BoldItalic.ttf
+
 # Set Pixel blue light theme on Gboard
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.ime.theme_id=5
