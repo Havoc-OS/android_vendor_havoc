@@ -100,8 +100,8 @@ PRODUCT_COPY_FILES += \
 
 # Extra packages
 PRODUCT_PACKAGES += \
-    Launcher3 \
     MarkupGoogle \
+    PixelLauncher \
     SoundPicker \
     Terminal \
     WallpaperPickerGooglePrebuilt \
@@ -116,6 +116,9 @@ PRODUCT_COPY_FILES += \
     vendor/havoc/lib/libsketchology_native.so:system/lib/libsketchology_native.so \
     vendor/havoc/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so
 	
+PRODUCT_COPY_FILES += \
+    vendor/havoc/etc/sysconfig/pixel.xml:system/etc/sysconfig/pixel.xml
+
 # Init.d script support
 PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/bin/sysinit:system/bin/sysinit \
