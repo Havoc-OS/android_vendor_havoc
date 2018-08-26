@@ -128,6 +128,7 @@ PRODUCT_COPY_FILES += \
     vendor/havoc/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so
 	
 PRODUCT_COPY_FILES += \
+    vendor/havoc/etc/sysconfig/google-hiddenapi-package-whitelist.xml:system/etc/sysconfig/google-hiddenapi-package-whitelist.xml \
     vendor/havoc/etc/sysconfig/pixel.xml:system/etc/sysconfig/pixel.xml
 
 # Init.d script support
