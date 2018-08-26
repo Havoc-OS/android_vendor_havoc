@@ -125,3 +125,6 @@ PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/addon.d/50-havoc.sh:system/addon.d/50-havoc.sh \
     vendor/havoc/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
     vendor/havoc/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions
+
+# Version
+include vendor/havoc/config/version.mk
