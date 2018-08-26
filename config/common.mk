@@ -120,6 +120,7 @@ endif
 
 # Havoc Packages
 PRODUCT_PACKAGES += \
+    Calculator \
     PixelLauncher \
     SoundPickerPrebuilt \
     Turbo \
