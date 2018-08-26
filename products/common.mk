@@ -99,11 +99,16 @@ PRODUCT_COPY_FILES += \
 
 # Extra packages
 PRODUCT_PACKAGES += \
-    Launcher3 \
+    PixelLauncher \
     SoundPicker \
     Stk \
     Terminal \
     WallpaperPickerGooglePrebuilt
+
+# Sysconfig
+PRODUCT_COPY_FILES += \
+    vendor/havoc/etc/sysconfig/google-hiddenapi-package-whitelist.xml:system/etc/sysconfig/google-hiddenapi-package-whitelist.xml \
+    vendor/havoc/etc/sysconfig/pixel.xml:system/etc/sysconfig/pixel.xml
 
 # Init.d script support
 PRODUCT_COPY_FILES += \
