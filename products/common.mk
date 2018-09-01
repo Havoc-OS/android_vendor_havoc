@@ -105,6 +105,10 @@ PRODUCT_PACKAGES += \
     Terminal \
     WallpaperPickerGooglePrebuilt
 
+# Set Pixel blue light theme on Gboard
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.com.google.ime.theme_id=5
+
 # Sysconfig
 PRODUCT_COPY_FILES += \
     vendor/havoc/etc/sysconfig/google-hiddenapi-package-whitelist.xml:system/etc/sysconfig/google-hiddenapi-package-whitelist.xml \
