@@ -105,6 +105,7 @@ PRODUCT_PACKAGES += \
     SoundPicker \
     Stk \
     Terminal \
+    Turbo \
     WallpaperPickerGooglePrebuilt
 
 # Fonts
@@ -120,10 +121,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.ime.theme_id=5
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    vendor/havoc/etc/permissions/privapp-permissions-turbo.xml:system/etc/permissions/privapp-permissions-turbo.xml
+
 # Sysconfig
 PRODUCT_COPY_FILES += \
     vendor/havoc/etc/sysconfig/google-hiddenapi-package-whitelist.xml:system/etc/sysconfig/google-hiddenapi-package-whitelist.xml \
-    vendor/havoc/etc/sysconfig/pixel.xml:system/etc/sysconfig/pixel.xml
+    vendor/havoc/etc/sysconfig/pixel.xml:system/etc/sysconfig/pixel.xml \
+    vendor/havoc/etc/sysconfig/turbo.xml:system/etc/sysconfig/turbo.xml
 
 # Init.d script support
 PRODUCT_COPY_FILES += \
