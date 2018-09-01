@@ -185,6 +185,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     rsync
 
+# Set Pixel blue light theme on Gboard
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.com.google.ime.theme_id=5
+
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.storage_manager.enabled=true
