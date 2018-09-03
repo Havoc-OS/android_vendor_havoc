@@ -107,7 +107,8 @@ PRODUCT_PACKAGES += \
     Stk \
     Terminal \
     Turbo \
-    WallpaperPickerGooglePrebuilt
+    WallpaperPickerGooglePrebuilt \
+    WellbeingPrebuilt
 
 # Fonts
 PRODUCT_COPY_FILES += \
