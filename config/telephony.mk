@@ -1,6 +1,6 @@
 # World APN list
-PRODUCT_COPY_FILES += \
-    vendor/havoc/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+PRODUCT_PACKAGES += \
+    apns-conf.xml
 
 # World SPN overrides list
 PRODUCT_COPY_FILES += \
