@@ -97,6 +97,30 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
+# Accents
+PRODUCT_PACKAGES += \
+    AmberAccent \
+    BlackAccent \
+    BlueAccent \
+    BlueGreyAccent \
+    BrownAccent \
+    CyanAccent \
+    DeepOrangeAccent \
+    DeepPurpleAccent \
+    GreenAccent \
+    GreyAccent \
+    IndigoAccent \
+    LightBlueAccent \
+    LightGreenAccent \
+    LimeAccent \
+    OrangeAccent \
+    PinkAccent \
+    PurpleAccent \
+    RedAccent \
+    TealAccent \
+    YellowAccent \
+    WhiteAccent
+
 # Extra packages
 PRODUCT_PACKAGES += \
     AdAway \
