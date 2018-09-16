@@ -127,6 +127,15 @@ PRODUCT_PACKAGES += \
     Turbo \
     WallpaperPickerGooglePrebuilt
 
+# Themes
+PRODUCT_PACKAGES += \
+    SettingsDarkTheme \
+    SystemDarkTheme \
+    SystemUIDarkTheme \
+    SettingsBlackTheme \
+    SystemBlackTheme \
+    SystemUIBlackTheme
+
 # Permissions
 PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/etc/permissions/privapp-permissions-turbo.xml:system/etc/permissions/privapp-permissions-turbo.xml
