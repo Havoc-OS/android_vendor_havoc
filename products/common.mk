@@ -97,6 +97,15 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
+# Themes
+PRODUCT_PACKAGES += \
+    SettingsDarkTheme \
+    SystemDarkTheme \
+    SystemUIDarkTheme \
+    SettingsBlackTheme \
+    SystemBlackTheme \
+    SystemUIBlackTheme
+
 # Accents
 PRODUCT_PACKAGES += \
     AmberAccent \
