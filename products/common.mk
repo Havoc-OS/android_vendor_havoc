@@ -135,6 +135,7 @@ PRODUCT_PACKAGES += \
     AdAway \
     Calculator \
     DeskClock \
+    OmniJaws \
     PixelLauncher \
     SoundPicker \
     Stk \
