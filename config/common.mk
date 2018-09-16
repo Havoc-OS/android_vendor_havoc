@@ -122,6 +122,7 @@ endif
 PRODUCT_PACKAGES += \
     Calculator \
     DeskClock \
+    OmniJaws \
     PixelLauncher \
     SoundPickerPrebuilt \
     Turbo \
