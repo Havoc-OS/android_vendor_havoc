@@ -138,6 +138,7 @@ PRODUCT_PACKAGES += \
     Calculator \
     DeskClock \
     OmniJaws \
+    OmniSwitch \
     PixelLauncher \
     SoundPicker \
     Stk \
