@@ -137,6 +137,7 @@ PRODUCT_PACKAGES += \
     AdAway \
     Calculator \
     DeskClock \
+    Jelly \
     OmniJaws \
     OmniSwitch \
     PixelLauncher \
