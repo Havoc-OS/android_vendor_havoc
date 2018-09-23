@@ -138,6 +138,7 @@ PRODUCT_PACKAGES += \
     Calculator \
     DeskClock \
     Jelly \
+    Music \
     OmniJaws \
     OmniSwitch \
     PixelLauncher \
