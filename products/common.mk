@@ -134,7 +134,6 @@ PRODUCT_PACKAGES += \
 
 # Extra packages
 PRODUCT_PACKAGES += \
-    AdAway \
     Calculator \
     DeskClock \
     Jelly \
@@ -142,7 +141,6 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     OmniSwitch \
     PixelLauncher \
-    SoundPicker \
     Stk \
     Terminal \
     Turbo \
