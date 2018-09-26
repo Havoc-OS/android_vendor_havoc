@@ -145,7 +145,8 @@ PRODUCT_PACKAGES += \
     Terminal \
     Turbo \
     WallpaperPickerGooglePrebuilt \
-    WellbeingPrebuilt
+    WellbeingPrebuilt \
+    messaging
 
 # Set Pixel blue light theme on Gboard
 PRODUCT_PROPERTY_OVERRIDES += \
