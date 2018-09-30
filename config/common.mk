@@ -146,27 +146,34 @@ PRODUCT_PACKAGES += \
 
 # Accents
 PRODUCT_PACKAGES += \
-    AmberAccent \
-    BlackAccent \
-    BlueAccent \
-    BlueGreyAccent \
-    BrownAccent \
-    CyanAccent \
-    DeepOrangeAccent \
-    DeepPurpleAccent \
-    GreenAccent \
-    GreyAccent \
-    IndigoAccent \
-    LightBlueAccent \
-    LightGreenAccent \
-    LimeAccent \
-    OrangeAccent \
-    PinkAccent \
-    PurpleAccent \
-    RedAccent \
-    TealAccent \
-    YellowAccent \
-    WhiteAccent
+    Amber \
+    Black \
+    Blue \
+    BlueGrey \
+    Brown \
+    Cyan \
+    DeepOrange \
+    DeepPurple \
+    Green \
+    Grey \
+    Indigo \
+    LightBlue \
+    LightGreen \
+    Lime \
+    Orange \
+    Pink \
+    Purple \
+    Red \
+    Teal \
+    Yellow \
+    White \
+    UserOne \
+    UserTwo \
+    UserThree \
+    UserFour \
+    UserFive \
+    UserSix \
+    UserSeven
 
 # Permissions
 PRODUCT_COPY_FILES += \

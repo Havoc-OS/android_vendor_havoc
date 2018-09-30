@@ -4,5 +4,5 @@
     android:versionName="1.0">
     <overlay android:targetPackage="android" android:priority="1"/>
 
-    <application android:label="@string/accent_color_teal" android:hasCode="false"/>
+    <application android:label="Teal" android:hasCode="false"/>
 </manifest>
