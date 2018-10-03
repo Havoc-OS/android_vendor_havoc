@@ -1,4 +1,3 @@
-#
 # Copyright (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,9 +11,10 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_arm.mk \
-    $(LOCAL_DIR)/havoc_arm64.mk \
-    $(LOCAL_DIR)/havoc_x86.mk
+$(call inherit-product, build/target/product/aosp_arm.mk)
+$(call inherit-product, vendor/havoc/config/common.mk)
+
+TARGET_USES_64_BIT_BINDER := true
+
+PRODUCT_NAME := havoc_arm

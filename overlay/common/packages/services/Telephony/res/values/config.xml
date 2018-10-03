@@ -13,8 +13,15 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Package name and fully-qualified class name for the wallpaper picker activity. -->
-    <string name="config_wallpaper_picker_package" translatable="false">com.google.android.apps.wallpaper</string>
-    <string name="config_wallpaper_picker_class" translatable="false">com.google.android.apps.wallpaper.picker.CategoryPickerActivity</string>
+
+<!-- Phone app resources that may need to be customized
+     for different hardware or product builds. -->
+<resources>
+    <!-- Determine whether calls to mute the microphone in PhoneUtils
+         are routed through the android.media.AudioManager class (true) or through
+         the com.android.internal.telephony.Phone interface (false). -->
+    <bool name="send_mic_mute_to_AudioManager">true</bool>
+
+    <!-- Show enabled lte option for lte device -->
+    <bool name="config_enabled_lte" translatable="false">true</bool>   
 </resources>
