@@ -114,7 +114,13 @@ endif
 
 # Havoc Packages
 PRODUCT_PACKAGES += \
+    PixelLauncher \
     SoundPickerPrebuilt
+
+# Sysconfig
+PRODUCT_COPY_FILES += \
+    vendor/havoc/prebuilt/common/etc/sysconfig/google-hiddenapi-package-whitelist.xml:system/etc/sysconfig/google-hiddenapi-package-whitelist.xml \
+    vendor/havoc/prebuilt/common/etc/sysconfig/pixel.xml:system/etc/sysconfig/pixel.xml
 
 # Exchange support
 PRODUCT_PACKAGES += \
