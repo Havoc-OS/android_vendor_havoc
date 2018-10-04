@@ -115,12 +115,18 @@ endif
 # Havoc Packages
 PRODUCT_PACKAGES += \
     PixelLauncher \
-    SoundPickerPrebuilt
+    SoundPickerPrebuilt \
+    Turbo
+
+# Permissions
+PRODUCT_COPY_FILES += \
+    vendor/havoc/prebuilt/common/etc/permissions/privapp-permissions-turbo.xml:system/etc/permissions/privapp-permissions-turbo.xml
 
 # Sysconfig
 PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/etc/sysconfig/google-hiddenapi-package-whitelist.xml:system/etc/sysconfig/google-hiddenapi-package-whitelist.xml \
-    vendor/havoc/prebuilt/common/etc/sysconfig/pixel.xml:system/etc/sysconfig/pixel.xml
+    vendor/havoc/prebuilt/common/etc/sysconfig/pixel.xml:system/etc/sysconfig/pixel.xml \
+    vendor/havoc/prebuilt/common/etc/sysconfig/turbo.xml:system/etc/sysconfig/turbo.xml
 
 # Exchange support
 PRODUCT_PACKAGES += \
