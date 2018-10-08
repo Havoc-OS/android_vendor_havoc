@@ -127,7 +127,6 @@ PRODUCT_PACKAGES += \
     PixelLauncher \
     SoundPickerPrebuilt \
     Terminal \
-    Turbo \
     WallpaperPickerGooglePrebuilt
 
 # Themes
