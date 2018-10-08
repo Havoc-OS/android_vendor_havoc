@@ -133,6 +133,7 @@ PRODUCT_PACKAGES += \
     SoundPickerPrebuilt \
     Stk \
     Terminal \
+    Turbo \
     WallpaperPickerGooglePrebuilt
 
 # Themes
