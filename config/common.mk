@@ -18,10 +18,18 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     net.tethering.noprovisioning=true \
     persist.debug.wfd.enable=1 \
     persist.sys.wfd.virtual=0 \
+    ro.adb.secure=0 \
     ro.build.selinux=1 \
     ro.setupwizard.rotation_locked=true \
     ro.opa.eligible_device=true \
     persist.sys.disable_rescue=true
+
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES := \
+    ro.adb.secure=0 \
+    ro.debuggable=1 \
+    ro.secure=0 \
+    persist.service.adb.enable=1 \
+    persist.sys.usb.config=mtp,adb
 
 # Default notification/alarm sounds
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -32,14 +40,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 ifneq ($(TARGET_BUILD_VARIANT),user)
 # Thank you, please drive thru!
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.dun.override=0
-endif
-
-ifeq ($(TARGET_BUILD_VARIANT),eng)
-# Disable ADB authentication
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=0
-else
-# Enable ADB authentication
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
 
 ifeq ($(BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE),)
