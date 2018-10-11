@@ -16,8 +16,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.com.android.dataroaming=false \
     drm.service.enabled=true \
     net.tethering.noprovisioning=true \
-    persist.debug.wfd.enable=1 \
-    persist.sys.wfd.virtual=0 \
     ro.adb.secure=0 \
     ro.build.selinux=1 \
     ro.setupwizard.rotation_locked=true \
@@ -30,6 +28,13 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES := \
     ro.secure=0 \
     persist.service.adb.enable=1 \
     persist.sys.usb.config=mtp,adb
+
+PRODUCT_PROPERTY_OVERRIDES := \
+    persist.sys.wfd.nohdcp=1 \
+    persist.debug.wfd.enable=1 \
+    persist.sys.wfd.virtual=0 \
+    persist.debug.wfd.enable=1 \
+    persist.sys.wfd.virtual=0
 
 # Default notification/alarm sounds
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
