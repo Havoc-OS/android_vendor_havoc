@@ -8,7 +8,7 @@ endif
 # Only include Havoc OTA for official builds
 ifeq ($(filter-out Official,$(HAVOC_BUILD_TYPE)),)
     PRODUCT_PACKAGES += \
-        HavocOTA
+        Updates
 endif
 
 TARGET_PRODUCT_SHORT := $(subst havoc_,,$(HAVOC_BUILD_TYPE))
