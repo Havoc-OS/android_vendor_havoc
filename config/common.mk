@@ -127,6 +127,7 @@ endif
 PRODUCT_PACKAGES += \
     Calculator \
     DeskClock \
+    messaging \
     OmniJaws \
     OmniSwitch \
     PixelLauncher \
