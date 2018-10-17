@@ -127,6 +127,8 @@ endif
 PRODUCT_PACKAGES += \
     Calculator \
     DeskClock \
+    LiveWallpapers \
+    LiveWallpapersPicker\
     messaging \
     OmniJaws \
     OmniSwitch \
