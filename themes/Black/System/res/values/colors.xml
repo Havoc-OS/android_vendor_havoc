@@ -58,4 +58,12 @@
 
     <!-- Two target preference vertical divider color -->
     <color name="list_divider_dark">#64eeeeee</color>
+
+    <!-- QS Tiles Colors -->
+    <color name="qs_disabled">#c3c3c3</color>
+    <color name="qs_inactive">#c3c3c3</color>
+    <color name="qs_active">#000000</color>
+    <color name="qs_tile_disabled">#8c8c8c</color>
+    <color name="qs_tile_inactive">#8c8c8c</color>
+    <color name="qs_tile_active">#ffffff</color>
 </resources>
