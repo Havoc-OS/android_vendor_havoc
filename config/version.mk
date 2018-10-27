@@ -15,8 +15,10 @@ TARGET_PRODUCT_SHORT := $(subst havoc_,,$(HAVOC_BUILD_TYPE))
 
 # Set all versions
 DATE := $(shell date -u +%Y%m%d)
+HAVOC_BUILD_DATE := $(shell date -u +%Y%m%d-%H%M)
 HAVOC_BUILD_VERSION := Havoc-OS-$(HAVOC_BASE_VERSION)-$(DATE)-$(HAVOC_BUILD_TYPE)
 HAVOC_VERSION := Havoc-OS-$(HAVOC_BASE_VERSION)-$(DATE)-$(HAVOC_BUILD)-$(HAVOC_BUILD_TYPE)
+HAVOC_MOD_VERSION := Havoc-OS-$(HAVOC_BASE_VERSION)-$(HAVOC_BUILD_DATE)-$(HAVOC_BUILD_TYPE)
 ROM_FINGERPRINT := Havoc-OS/$(HAVOC_BASE_VERSION)/$(PLATFORM_VERSION)/$(TARGET_PRODUCT_SHORT)/$(shell date +%Y%m%d)
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -24,5 +26,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.havoc.build.version=$(HAVOC_BUILD_VERSION) \
     ro.havoc.version=$(HAVOC_VERSION) \
     ro.havoc.releasetype=$(HAVOC_BUILD_TYPE) \
-    ro.mod.version=$(HAVOC_BUILD_TYPE)-$(HAVOC_BASE_VERSION)-$(DATE) \
+    ro.mod.version=$(HAVOC_MOD_VERSION) \
     ro.havoc.fingerprint=$(ROM_FINGERPRINT)
