@@ -130,14 +130,18 @@ PRODUCT_PACKAGES += \
     LiveWallpapers \
     LiveWallpapersPicker\
     messaging \
-    OmniJaws \
     OmniSwitch \
     PixelLauncher \
     SoundPickerPrebuilt \
     Stk \
     Terminal \
     Turbo \
-    WallpaperPickerGooglePrebuilt
+    WallpaperPickerGooglePrebuilt \
+    WeatherClient
+
+# Weather
+PRODUCT_COPY_FILES += \
+    vendor/havoc/prebuilt/common/etc/permissions/org.pixelexperience.weather.client.xml:system/etc/permissions/org.pixelexperience.weather.client.xml
 
 # Themes
 PRODUCT_PACKAGES += \
