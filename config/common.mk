@@ -147,6 +147,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     AmbientPlayHistoryProvider
 
+# Substratum Key
+PRODUCT_COPY_FILES += \
+    vendor/havoc/prebuilt/common/priv-app/SubstratumKey.apk:system/priv-app/SubstratumKey/SubstratumKey.apk
+	
 # Themes
 PRODUCT_PACKAGES += \
     SettingsDarkTheme \
