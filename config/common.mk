@@ -144,7 +144,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.havoc.weather.revision=2
 
 PRODUCT_COPY_FILES += \
-    vendor/havoc/prebuilt/common/etc/permissions/org.pixelexperience.weather.client.xml:system/etc/permissions/org.pixelexperience.weather.client.xml
+    vendor/havoc/prebuilt/common/etc/permissions/org.pixelexperience.weather.client.xml:system/etc/permissions/org.pixelexperience.weather.client.xml \
+    vendor/havoc/prebuilt/common/etc/default-permissions/org.pixelexperience.weather.client.xml:system/etc/default-permissions/org.pixelexperience.weather.client.xml
 
 # Ambient Play
 PRODUCT_PACKAGES += \
