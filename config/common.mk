@@ -211,6 +211,14 @@ PRODUCT_PACKAGES += \
     QStileOreoSquircleTrim \
     QStileSquircleTrim
 
+# QS header styles
+PRODUCT_PACKAGES += \
+    QSHeaderBlack \
+    QSHeaderGrey \
+    QSHeaderLightGrey \
+    QSHeaderAccent \
+    QSHeaderTransparent
+
 # Permissions
 PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/etc/permissions/privapp-permissions-turbo.xml:system/etc/permissions/privapp-permissions-turbo.xml
