@@ -139,6 +139,10 @@ PRODUCT_PACKAGES += \
     WallpaperPickerGooglePrebuilt \
     WeatherProvider
 
+# Fonts
+PRODUCT_PACKAGES += \
+    Havoc-Fonts
+
 # WeatherProvider
 PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/etc/permissions/com.android.providers.weather.xml:system/etc/permissions/com.android.providers.weather.xml \
