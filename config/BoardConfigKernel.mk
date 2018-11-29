@@ -75,7 +75,7 @@ ifneq ($(USE_CCACHE),)
     CCACHE_BIN := $(shell which ccache)
 
     ifeq ($(CCACHE_BIN),)
-        CCACHE_BIN := $(BUILD_TOP)/prebuilts/misc/$(HOST_PREBUILT_TAG)/ccache/ccache
+        CCACHE_BIN := $(BUILD_TOP)/prebuilts/build-tools/$(HOST_PREBUILT_TAG)/bin/ccache
         # Check that the executable is here.
         CCACHE_BIN := $(strip $(wildcard $(CCACHE_BIN)))
     endif
