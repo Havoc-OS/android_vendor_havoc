@@ -22,6 +22,9 @@ PRODUCT_PROPERTY_OVERRIDES := \
     persist.debug.wfd.enable=1 \
     persist.sys.wfd.virtual=0
 
+# Allow tethering without provisioning app
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += net.tethering.noprovisioning=true
+
 # Default notification/alarm sounds
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.config.ringtone=The_big_adventure.ogg \
