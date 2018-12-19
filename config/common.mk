@@ -324,9 +324,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     rsync
 
-# Set Pixel blue light theme on Gboard
+# GBoard Themes
+PRODUCT_COPY_FILES += \
+    vendor/havoc/themes/GBoard/MD2.zip:system/etc/gboard/MD2.zip \
+    vendor/havoc/themes/GBoard/MD2Black.zip:system/etc/gboard/MD2Black.zip \
+    vendor/havoc/themes/GBoard/MD2Dark.zip:system/etc/gboard/MD2Dark.zip
+
+# Set Pixel blue light MD2 theme on Gboard
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.com.google.ime.theme_id=5
+    ro.com.google.ime.themes_dir=/system/etc/gboard \
+    ro.com.google.ime.theme_file=MD2.zip
 
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
