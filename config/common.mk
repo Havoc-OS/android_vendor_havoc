@@ -146,10 +146,6 @@ PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/etc/permissions/com.android.providers.weather.xml:system/etc/permissions/com.android.providers.weather.xml \
     vendor/havoc/prebuilt/common/etc/default-permissions/com.android.providers.weather.xml:system/etc/default-permissions/com.android.providers.weather.xml
 
-# Ambient Play
-PRODUCT_PACKAGES += \
-    AmbientPlayHistoryProvider
-
 # Substratum Key
 PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/priv-app/SubstratumKey.apk:system/priv-app/SubstratumKey/SubstratumKey.apk
