@@ -3,6 +3,9 @@ type Product_variables struct {
 	Additional_gralloc_10_usage_bits struct {
 		Cppflags []string
 	}
+	Apply_msm8974_1440p_egl_workaround struct {
+		Cflags []string
+	}
 	Device_support_hwfde struct {
 		Cflags []string
 		Header_libs []string
@@ -46,6 +49,7 @@ type Product_variables struct {
 
 type ProductVariables struct {
 	Additional_gralloc_10_usage_bits  *string `json:",omitempty"`
+	Apply_msm8974_1440p_egl_workaround  *bool `json:",omitempty"`
 	Device_support_hwfde  *bool `json:",omitempty"`
 	Device_support_hwfde_perf  *bool `json:",omitempty"`
 	Device_support_legacy_hwfde  *bool `json:",omitempty"`
