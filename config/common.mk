@@ -263,6 +263,12 @@ PRODUCT_PACKAGES += \
     AOSPUI \
     PixelUI
 
+# Switch themes
+PRODUCT_PACKAGES += \
+    MD2Switch \
+    OnePlusSwitch \
+    StockSwitch
+
 # Sysconfig
 PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/etc/sysconfig/google-hiddenapi-package-whitelist.xml:system/etc/sysconfig/google-hiddenapi-package-whitelist.xml \
