@@ -28,10 +28,13 @@
         <item>com.google.android.gsf/com.google.android.gsf.update.SystemUpdateActivity</item>
         <item>com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService$Receiver</item>
         <item>com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService$SecretCodeReceiver</item>
+        <item>com.google.android.gsf/com.google.android.gsf.update.SystemUpdateServiceReceiver</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateActivity</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService$Receiver</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService$ActiveReceiver</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService$SecretCodeReceiver</item>
+        <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateServiceReceiver</item>
+        <item>com.google.android.setupwizard/com.google.android.setupwizard.time.DateTimeCheck</item>
     </string-array>
 
     <!-- Enable the RingtonePickerActivity in 'com.android.providers.media'. -->
@@ -59,8 +62,14 @@
     <string name="config_appsAuthorizedForSharedAccounts">;com.android.vending;com.android.settings;</string>
     <string name="config_persistentDataPackageName">com.google.android.gms</string>
 
-   <!-- Enable doze powersaving mode -->
-   <bool name="config_enableAutoPowerModes">true</bool>
+    <!--  Whether Multiuser UI should be shown -->
+    <bool name="config_enableMultiUserUI">true</bool>
+
+    <!--  Maximum number of supported users -->
+    <integer name="config_multiuserMaximumUsers">4</integer>
+
+    <!-- Enable doze powersaving mode -->
+    <bool name="config_enableAutoPowerModes">true</bool>
 
     <!-- Whether safe headphone volume is enabled or not (country specific). -->
     <bool name="config_safe_media_volume_enabled">false</bool>
@@ -80,7 +89,11 @@
 
     <!-- If true, the screen can be rotated via the accelerometer in all 4
          rotations as the default behavior. -->
-    <bool name="config_allowAllRotations">true</bool>
+    <bool name="config_allowAllRotations">false</bool>
+
+    <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
+         in hardware. -->
+    <bool name="config_setColorTransformAccelerated">true</bool>
 
     <!-- Minimum color temperature, in Kelvin, supported by Night display. -->
     <integer name="config_nightDisplayColorTemperatureMin">1600</integer>
@@ -101,10 +114,9 @@
         <item>com.google.android.gms</item>
     </string-array>
 
-    <!-- Boolean indicating whether or not to revert to default country code when cellular
-    radio is unable to find any MCC information to infer wifi country code from -->
-    <bool translatable="false" name="config_wifi_revert_country_code_on_cellular_loss">true</bool>
-	
+    <!-- Flag indicating whether round icons should be parsed from the application manifest. -->
+    <bool name="config_useRoundIcon">true</bool>
+
     <!-- Set icon mask to circle -->
     <string name="config_icon_mask" translatable="false">"M50 0A50 50,0,1,1,50 100A50 50,0,1,1,50 0"</string>
 
