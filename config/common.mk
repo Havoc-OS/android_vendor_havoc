@@ -57,6 +57,10 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/havoc/config/permissions/backup.xml:system/etc/sysconfig/backup.xml
 
+# Power whitelist
+PRODUCT_COPY_FILES += \
+    vendor/havoc/config/permissions/havoc-power-whitelist.xml:system/etc/sysconfig/havoc-power-whitelist.xml
+
 # init.d support
 PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner
