@@ -6,28 +6,17 @@ EXCLUDE_SYSTEMUI_TESTS := true
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     keyguard.no_require_sim=true \
+    dalvik.vm.debug.alloc=0 \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
-    ro.com.google.clientidbase=android-google \
-    ro.com.android.wifi-watchlist=GoogleGuest \
+    ro.error.receiver.system.apps=com.google.android.gms \
     ro.setupwizard.enterprise_mode=1 \
-    ro.setupwizard.network_required=false \
-    ro.setupwizard.gservices_delay=-1 \
     ro.com.android.dataroaming=false \
-    drm.service.enabled=true \
-    net.tethering.noprovisioning=true \
-    ro.adb.secure=0 \
-    ro.build.selinux=1 \
-    ro.setupwizard.rotation_locked=true \
+    ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent \
     ro.opa.eligible_device=true \
-    persist.sys.disable_rescue=true
-
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES := \
-    ro.adb.secure=0 \
-    ro.debuggable=1 \
-    ro.secure=0 \
-    persist.service.adb.enable=1 \
-    persist.sys.usb.config=mtp,adb
+    ro.com.android.dateformat=MM-dd-yyyy \
+    ro.build.selinux=1 \
+    ro.carrier=unknown
 
 PRODUCT_PROPERTY_OVERRIDES := \
     persist.sys.wfd.nohdcp=1 \
@@ -45,14 +34,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 ifneq ($(TARGET_BUILD_VARIANT),user)
 # Thank you, please drive thru!
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.dun.override=0
-endif
-
-ifeq ($(BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE),)
-  PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.device.cache_dir=/data/cache
-else
-  PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.device.cache_dir=/cache
 endif
 
 # Whitelist packages for location providers not in system
@@ -76,13 +57,21 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/havoc/config/permissions/backup.xml:system/etc/sysconfig/backup.xml
 
+# Power whitelist
+PRODUCT_COPY_FILES += \
+    vendor/havoc/config/permissions/havoc-power-whitelist.xml:system/etc/sysconfig/havoc-power-whitelist.xml
+
 # init.d support
 PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner
 
-# Copy all Havoc-specific init rc files
+# Don't export PS1 in /system/etc/mkshrc.
 PRODUCT_COPY_FILES += \
-    vendor/havoc/prebuilt/common/etc/init.local.rc:root/init.havoc.rc
+    vendor/havoc/prebuilt/common/etc/mkshrc:system/etc/mkshrc
+
+# Copy all Havoc-specific init rc files
+$(foreach f,$(wildcard vendor/havoc/prebuilt/common/etc/init/*.rc),\
+	$(eval PRODUCT_COPY_FILES += $(f):system/etc/init/$(notdir $f)))
 
 # Copy over added mimetype supported in libcore.net.MimeUtils
 PRODUCT_COPY_FILES += \
@@ -106,22 +95,26 @@ PRODUCT_COPY_FILES += \
 
 # Fix Google dialer
 PRODUCT_COPY_FILES += \
-    vendor/havoc/prebuilt/common/etc/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
-
-# Include explicitly to work around GMS issues
-PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full \
-    librsjni
+    vendor/havoc/prebuilt/common/etc/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
 
 # Latin IME lib
 ifeq ($(TARGET_ARCH),arm64)
 PRODUCT_COPY_FILES += \
-    vendor/havoc/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so \
+    vendor/havoc/prebuilt/common/lib64/libjni_latinime.so:system/lib64/libjni_latinime.so \
     vendor/havoc/prebuilt/common/lib64/libjni_latinimegoogle.so:system/lib64/libjni_latinimegoogle.so
 else
 PRODUCT_COPY_FILES += \
+    vendor/havoc/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so \
     vendor/havoc/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
 endif
+
+# Do not include art debug targets
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+
+# Strip the local variable table and the local variable type table to reduce
+# the size of the system image. This has no bearing on stack traces, but will
+# leave less information available via JDWP.
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 
 # Havoc Packages
 PRODUCT_PACKAGES += \
