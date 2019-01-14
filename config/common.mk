@@ -171,6 +171,11 @@ PRODUCT_PACKAGES += \
     libjni_latinimegoogle
 endif
 
+# Cutout control overlays
+PRODUCT_PACKAGES += \
+    HideCutout \
+    StatusBarStock
+
 # Extra tools in Havoc
 PRODUCT_PACKAGES += \
     7z \
