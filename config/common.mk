@@ -137,6 +137,7 @@ PRODUCT_PACKAGES += \
     CustomDoze \
     GalleryGoPrebuilt \
     NexusLauncherRelease \
+    OmniStyle \
     PixelThemes \
     SafetyHubPrebuilt \
     SettingsIntelligenceGooglePrebuilt \
