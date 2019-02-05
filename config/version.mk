@@ -1,5 +1,5 @@
 # Versioning System
-HAVOC_BASE_VERSION = v2.1
+HAVOC_BASE_VERSION = v2.2
 
 ifndef HAVOC_BUILD_TYPE
     HAVOC_BUILD_TYPE := Unofficial
@@ -15,7 +15,7 @@ TARGET_PRODUCT_SHORT := $(subst havoc_,,$(HAVOC_BUILD_TYPE))
 
 # Set all versions
 DATE := $(shell date -u +%Y%m%d)
-HAVOC_BASE_SET_VERSION = 2.1
+HAVOC_BASE_SET_VERSION = 2.2
 HAVOC_BUILD_DATE := $(shell date -u +%Y%m%d-%H%M)
 HAVOC_BUILD_VERSION := Havoc-OS-$(HAVOC_BASE_VERSION)-$(DATE)-$(HAVOC_BUILD_TYPE)
 HAVOC_DATE := $(shell date -u +%d-%m-%Y)
