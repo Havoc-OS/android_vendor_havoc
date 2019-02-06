@@ -149,9 +149,11 @@ PRODUCT_PACKAGES += \
     SettingsDarkTheme \
     SystemDarkTheme \
     SystemUIDarkTheme \
+    WellbeingDarkTheme \
     SettingsBlackTheme \
     SystemBlackTheme \
-    SystemUIBlackTheme
+    SystemUIBlackTheme \
+    WellbeingBlackTheme \
 
 # Notification themes
 PRODUCT_PACKAGES += \
