@@ -132,10 +132,6 @@ PRODUCT_PACKAGES += \
     WallpaperPickerGooglePrebuilt \
     WeatherProvider
 
-# Fonts
-PRODUCT_PACKAGES += \
-    Havoc-Fonts
-
 # WeatherProvider
 PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/etc/permissions/com.android.providers.weather.xml:system/etc/permissions/com.android.providers.weather.xml \
@@ -144,133 +140,6 @@ PRODUCT_COPY_FILES += \
 # Substratum Key
 PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/priv-app/SubstratumKey.apk:system/priv-app/SubstratumKey/SubstratumKey.apk
-	
-# Themes
-PRODUCT_PACKAGES += \
-    SettingsDarkTheme \
-    SystemDarkTheme \
-    SystemUIDarkTheme \
-    WellbeingDarkTheme \
-    SettingsBlackTheme \
-    SystemBlackTheme \
-    SystemUIBlackTheme \
-    WellbeingBlackTheme \
-
-# Notification themes
-PRODUCT_PACKAGES += \
-    NotificationBlackTheme \
-    NotificationDarkTheme
-
-# Accents
-PRODUCT_PACKAGES += \
-    Amber \
-    Black \
-    Blue \
-    BlueGrey \
-    Brown \
-    CandyRed \
-    Cyan \
-    DeepOrange \
-    DeepPurple \
-    ExtendedGreen \
-    Green \
-    Grey \
-    Indigo \
-    JadeGreen \
-    LightBlue \
-    LightGreen \
-    Lime \
-    Orange \
-    PaleBlue \
-    PaleRed \
-    Pink \
-    Purple \
-    Red \
-    Teal \
-    Yellow \
-    White \
-    UserOne \
-    UserTwo \
-    UserThree \
-    UserFour \
-    UserFive \
-    UserSix \
-    UserSeven \
-    ObfusBleu \
-    NotImpPurple \
-    Holillusion \
-    MoveMint \
-    FootprintPurple \
-    BubblegumPink \
-    FrenchBleu \
-    Stock \
-    ManiaAmber \
-    SeasideMint \
-    DreamyPurple \
-    SpookedPurple \
-    HeirloomBleu \
-    TruFilPink \
-    WarmthOrange \
-    ColdBleu \
-    DiffDayGreen \
-    DuskPurple \
-    BurningRed \
-    HazedPink \
-    ColdYellow \
-    NewHouseOrange \
-    IllusionsPurple
-
-# QS tile styles
-PRODUCT_PACKAGES += \
-    QStileDefault \
-    QStileCircleTrim \
-    QStileCircleDualTone \
-    QStileCircleGradient \
-    QStileCookie \
-    QStileDottedCircle \
-    QStileDualToneCircle \
-    QStileInk \
-    QStileInkdrop \
-    QStileMountain \
-    QStileNinja \
-    QStileOreo \
-    QStileOreoCircleTrim \
-    QStileOreoSquircleTrim \
-    QStilePokesign \
-    QStileSquaremedo \
-    QStileSquircle \
-    QStileSquircleTrim \
-    QStileTeardrop \
-    QStileWavey
-
-# QS header styles
-PRODUCT_PACKAGES += \
-    QSHeaderBlack \
-    QSHeaderGrey \
-    QSHeaderLightGrey \
-    QSHeaderAccent \
-    QSHeaderTransparent
-
-# QS accents
-PRODUCT_PACKAGES += \
-    QSAccentBlack \
-    QSAccentWhite
-
-# UI themes
-PRODUCT_PACKAGES += \
-    AOSPUI \
-    PixelUI
-
-# Switch themes
-PRODUCT_PACKAGES += \
-    MD2Switch \
-    OnePlusSwitch \
-    StockSwitch
-
-# Cutout control overlays
-PRODUCT_PACKAGES += \
-    HideCutout \
-    StatusBarStock
 
 # Sysconfig
 PRODUCT_COPY_FILES += \
@@ -334,17 +203,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     rsync
 
-# GBoard Themes
-PRODUCT_COPY_FILES += \
-    vendor/havoc/themes/GBoard/MD2.zip:system/etc/gboard/MD2.zip \
-    vendor/havoc/themes/GBoard/MD2Black.zip:system/etc/gboard/MD2Black.zip \
-    vendor/havoc/themes/GBoard/MD2Dark.zip:system/etc/gboard/MD2Dark.zip
-
-# Set Pixel blue light MD2 theme on Gboard
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.com.google.ime.themes_dir=/system/etc/gboard \
-    ro.com.google.ime.theme_file=MD2.zip
-
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.storage_manager.enabled=true
@@ -365,3 +223,6 @@ include vendor/havoc/config/bootanimation.mk
 
 # Version
 include vendor/havoc/config/version.mk
+
+# Themes
+include vendor/themes/config.mk
