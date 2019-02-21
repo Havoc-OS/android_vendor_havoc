@@ -89,6 +89,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 
+# Lawnchair
+PRODUCT_COPY_FILES += \
+    vendor/havoc/prebuilt/common/etc/permissions/privapp-permissions-lawnchair.xml:system/etc/permissions/privapp-permissions-lawnchair.xml \
+    vendor/havoc/prebuilt/common/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml:system/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml
+
 # Enable wireless Xbox 360 controller support
 PRODUCT_COPY_FILES += \
     frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_0719.kl
@@ -121,11 +126,11 @@ PRODUCT_PACKAGES += \
     Calculator \
     CustomDoze \
     DeskClock \
+    Lawnchair \
     LiveWallpapers \
     LiveWallpapersPicker\
     messaging \
     OmniStyle \
-    PixelLauncher \
     SoundPickerPrebuilt \
     Stk \
     Terminal \
