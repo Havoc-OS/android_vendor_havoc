@@ -22,4 +22,5 @@ HAVOC_TARGET_PACKAGE := $(PRODUCT_OUT)/$(HAVOC_BUILD_VERSION).zip
 bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
 	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(HAVOC_TARGET_PACKAGE)
 	$(hide) $(MD5SUM) $(HAVOC_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(HAVOC_TARGET_PACKAGE).md5sum
+	$(hide) ./vendor/havoc/tools/generate_ota_info.sh $(HAVOC_TARGET_PACKAGE)
 	@echo "Package Complete: $(HAVOC_TARGET_PACKAGE)" >&2
