@@ -10,6 +10,6 @@ then
     datetime=$(grep ro\.build\.date\.utc $OUT/system/build.prop | cut -d= -f2);
     id=$(sha256sum $file_path | awk '{ print $1 }');
     url="https://sourceforge.net/projects/havoc-os/files/$HAVOC_BUILD/$filename/download";
-    echo "{\n  \"response\": [\n    {\n      \"filename\": \"$filename\",\n      \"version\": \"v$version\",\n      \"romtype\": \"$romtype\",\n      \"size\": \"$size\",\n      \"datetime\": $datetime,\n      \"id\": \"$id\",\n      \"url\": \"$url\"\n    }\n  ]\n}" > $OUT/$HAVOC_BUILD.json
+    echo -e "{\n  \"response\": [\n    {\n      \"filename\": \"$filename\",\n      \"version\": \"v$version\",\n      \"romtype\": \"$romtype\",\n      \"size\": \"$size\",\n      \"datetime\": $datetime,\n      \"id\": \"$id\",\n      \"url\": \"$url\"\n    }\n  ]\n}" > $OUT/$HAVOC_BUILD.json
   fi
 fi
