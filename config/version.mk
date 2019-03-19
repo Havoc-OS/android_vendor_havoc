@@ -22,3 +22,9 @@ ifeq ($(WITH_GAPPS),true)
 else
     HAVOC_BUILD_VERSION := Havoc-OS-v$(HAVOC_VERSION)-$(shell date -u +%Y%m%d)-$(HAVOC_BUILD)-$(HAVOC_BUILD_TYPE)
 endif
+
+export HAVOC_BUILD_DATE
+export HAVOC_BUILD_TYPE
+export HAVOC_BUILD_VERSION
+export HAVOC_FINGERPRINT
+export HAVOC_VERSION
