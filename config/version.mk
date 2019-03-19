@@ -20,11 +20,9 @@ HAVOC_DATE := $(shell date -u +%d-%m-%Y)
 HAVOC_VERSION := Havoc-OS-v$(HAVOC_BASE_VERSION)-$(DATE)-$(HAVOC_BUILD)-$(HAVOC_BUILD_TYPE)
 ROM_FINGERPRINT := Havoc-OS/v$(HAVOC_BASE_VERSION)/$(PLATFORM_VERSION)/$(TARGET_PRODUCT_SHORT)/$(DATE)
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    BUILD_DISPLAY_ID=$(BUILD_ID) \
-    ro.havoc.base.version=$(HAVOC_BASE_VERSION) \
-    ro.havoc.build.date=$(HAVOC_DATE) \
-    ro.havoc.build.version=$(HAVOC_BUILD_VERSION) \
-    ro.havoc.fingerprint=$(ROM_FINGERPRINT) \
-    ro.havoc.releasetype=$(HAVOC_BUILD_TYPE) \
-    ro.havoc.version=$(HAVOC_VERSION)
+export HAVOC_BASE_VERSION
+export HAVOC_BUILD_VERSION
+export HAVOC_BUILD_TYPE
+export HAVOC_DATE
+export HAVOC_VERSION
+export ROM_FINGERPRINT
