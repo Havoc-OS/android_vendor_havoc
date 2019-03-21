@@ -5,7 +5,7 @@ then
   filename=$(basename "$file_path")
   if [ -f $file_path ]; then
     version=$(grep ro\.havoc\.base\.version $OUT/system/build.prop | cut -d= -f2);
-    romtype=$(echo $HAVOC_BUILD_TYPE);
+    romtype=$(grep ro\.havoc\.releasetype $OUT/system/build.prop | cut -d= -f2);
     size=$(stat -c%s $file_path);
     datetime=$(grep ro\.build\.date\.utc $OUT/system/build.prop | cut -d= -f2);
     id=$(sha256sum $file_path | awk '{ print $1 }');
