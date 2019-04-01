@@ -135,7 +135,6 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 
 # Havoc Packages
 PRODUCT_PACKAGES += \
-    Browser \
     Calculator \
     CustomDoze \
     DeskClock \
