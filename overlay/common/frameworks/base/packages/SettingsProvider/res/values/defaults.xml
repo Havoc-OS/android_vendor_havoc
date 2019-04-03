@@ -17,4 +17,6 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Googles Backup transport service -->
     <string name="def_backup_transport">com.google.android.gms/.backup.BackupTransportService</string>
+    <!-- Default for Settings.System.VIBRATE_WHEN_RINGING -->
+    <bool name="def_vibrate_when_ringing">true</bool>
 </resources>
