@@ -158,17 +158,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/priv-app/SubstratumKey.apk:system/priv-app/SubstratumKey/SubstratumKey.apk
 
-# Markup libs
-ifeq ($(TARGET_ARCH),arm64)
-PRODUCT_COPY_FILES += \
-    vendor/havoc/prebuilt/common/lib/libsketchology_native.so:system/lib/libsketchology_native.so \
-    vendor/havoc/prebuilt/common/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so
-
-    else
-PRODUCT_COPY_FILES += \
-    vendor/havoc/prebuilt/common/lib/libsketchology_native.so:system/lib/libsketchology_native.so
-endif
-
 # Sysconfig
 PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/etc/sysconfig/google-hiddenapi-package-whitelist.xml:system/etc/sysconfig/google-hiddenapi-package-whitelist.xml \
