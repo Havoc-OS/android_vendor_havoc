@@ -147,7 +147,13 @@ PRODUCT_PACKAGES += \
     Stk \
     Terminal \
     WallpaperPickerGooglePrebuilt \
-    WeatherProvider
+    WeatherProvider \
+	MarkupGoogle
+
+# Markup libs
+PRODUCT_COPY_FILES += \
+	vendor/havoc/prebuilt/common/lib/libsketchology_native.so:system/lib/libsketchology_native.so \
+	vendor/havoc/prebuilt/common/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so
 
 # WeatherProvider
 PRODUCT_COPY_FILES += \
