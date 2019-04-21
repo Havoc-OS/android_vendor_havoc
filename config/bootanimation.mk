@@ -18,9 +18,9 @@ $(eval TARGET_BOOTANIMATION_NAME := $(shell \
     if [ "$(1)" -le "$(TARGET_BOOTANIMATION_SIZE)" ]; then \
       echo $(1); \
       exit 0; \
-    fi;
-  fi;
-  echo $(TARGET_BOOTANIMATION_NAME); ))
+    fi; \
+  fi; \
+  echo $(TARGET_BOOTANIMATION_SIZE); ))
 endef
 $(foreach size,$(bootanimation_sizes), $(call check_and_set_bootanimation,$(size)))
 
