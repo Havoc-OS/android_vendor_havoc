@@ -25,12 +25,10 @@
     of a dedicated device, etc.
 -->
 <permissions>
-
-    <privapp-permissions package="com.havoc.updater">
-        <permission name="android.permission.ACCESS_CACHE_FILESYSTEM"/>
-        <permission name="android.permission.REBOOT"/>
-        <permission name="android.permission.RECOVERY"/>
-        <permission name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <privapp-permissions package="com.android.fmradio">
+        <permission name="android.permission.ACCESS_FM_RADIO"/>
+        <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.android.systemui">
@@ -41,6 +39,13 @@
     <privapp-permissions package="com.android.settings">
         <permission name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS" />
         <permission name="lineageos.permission.MANAGE_LIVEDISPLAY" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.havoc.updater">
+        <permission name="android.permission.ACCESS_CACHE_FILESYSTEM"/>
+        <permission name="android.permission.REBOOT"/>
+        <permission name="android.permission.RECOVERY"/>
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE" />
     </privapp-permissions>
 
 </permissions>
