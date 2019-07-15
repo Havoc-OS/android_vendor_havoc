@@ -31,6 +31,7 @@
     </privapp-permissions>
 
     <privapp-permissions package="com.android.systemui">
+        <permission name="android.permission.CHANGE_CONFIGURATION"/>
         <permission name="android.permission.MODIFY_DAY_NIGHT_MODE"/>
         <permission name="android.permission.NAVIGATION_EDITOR"/>
         <permission name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS" />
@@ -38,6 +39,7 @@
     </privapp-permissions>
 
     <privapp-permissions package="com.android.settings">
+        <permission name="android.permission.ACCESS_FONT_MANAGER"/>
         <permission name="android.permission.NAVIGATION_EDITOR"/>
         <permission name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS" />
         <permission name="lineageos.permission.MANAGE_LIVEDISPLAY" />
