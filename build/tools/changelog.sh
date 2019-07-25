@@ -24,14 +24,14 @@ fi
 
 touch $Changelog
 
-# define changelog_days using 'export changelog_days=10'
+# define changelog_days using 'export changelog_days=14'
 # this can be done before intiate build environment (. build/envsetup.sh) 
 if [ -z $changelog_days ];then
-	changelog_days=10
+	changelog_days=14
 else
 	if (($changelog_days > 30 )); then
-        echo "Changelog can not generated for more then 30 days. For how many days do you want to generate changelog again? (🕑 timeout 15 seconds - default to 10 days)"
-        read -r -t 15 changelog_days || changelog_days=10
+        echo "Changelog can not generated for more then 30 days. For how many days do you want to generate changelog again? (🕑 timeout 15 seconds - default to 14 days)"
+        read -r -t 15 changelog_days || changelog_days=14
 	fi
 fi
 
