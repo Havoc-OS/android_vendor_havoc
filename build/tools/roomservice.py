@@ -176,12 +176,12 @@ def add_to_manifest(repositories, fallback_branch = None):
         repo_target = repository['target_path']
         print('Checking if %s is fetched from %s' % (repo_target, repo_name))
         if is_in_manifest(repo_target):
-            print('Havoc-OS/%s already fetched to %s' % (repo_name, repo_target))
+            print('Havoc-Devices/%s already fetched to %s' % (repo_name, repo_target))
             continue
 
-        print('Adding dependency: Havoc-OS/%s -> %s' % (repo_name, repo_target))
+        print('Adding dependency: Havoc-Devices/%s -> %s' % (repo_name, repo_target))
         project = ElementTree.Element("project", attrib = { "path": repo_target,
-            "remote": "github", "name": "Havoc-OS/%s" % repo_name })
+            "remote": "github", "name": "Havoc-Devices/%s" % repo_name })
 
         if 'branch' in repository:
             project.set('revision',repository['branch'])
@@ -299,4 +299,4 @@ else:
             print("Done")
             sys.exit()
 
-print("Repository for %s not found in the Havoc-OS Github repository list. If this is in error, you may need to manually add it to your local_manifests/roomservice.xml." % device)
+print("Repository for %s not found in the Havoc-Devices Github repository list. If this is in error, you may need to manually add it to your local_manifests/roomservice.xml." % device)
