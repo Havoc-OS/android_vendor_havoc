@@ -15,7 +15,7 @@ TARGET_PRODUCT_SHORT := $(subst havoc_,,$(HAVOC_BUILD_TYPE))
 # Set all versions
 DATE := $(shell date -u +%Y%m%d)
 TIME := $(shell date -u +%H%M)
-HAVOC_BASE_VERSION = 2.7
+HAVOC_BASE_VERSION = 2.8
 HAVOC_BUILD_VERSION := Havoc-OS-v$(HAVOC_BASE_VERSION)-$(DATE)-$(HAVOC_BUILD_TYPE)
 HAVOC_DATE := $(shell date -u +%d-%m-%Y)
 HAVOC_VERSION := Havoc-OS-v$(HAVOC_BASE_VERSION)-$(DATE)-$(HAVOC_BUILD)-$(HAVOC_BUILD_TYPE)
