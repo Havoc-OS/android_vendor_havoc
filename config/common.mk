@@ -141,6 +141,7 @@ PRODUCT_PACKAGES += \
     Lawnchair \
     LiveWallpapers \
     LiveWallpapersPicker\
+    Longshot \
     messaging \
     OmniStyle \
     SoundPickerPrebuilt \
