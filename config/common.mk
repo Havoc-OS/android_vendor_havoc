@@ -127,6 +127,7 @@ PRODUCT_PACKAGES += \
     Browser \
     CustomDoze \
     GalleryGoPrebuilt \
+    Longshot \
     NexusLauncherRelease \
     OmniStyle \
     PixelThemesStub2019 \
