@@ -79,12 +79,6 @@
     <!-- Whether safe headphone volume is enabled or not (country specific). -->
     <bool name="config_safe_media_volume_enabled">false</bool>
 
-    <!-- Controls the WiFi wakeup feature.
-          0 = Not available.
-          1 = Available.
-     -->
-    <integer translatable="false" name="config_wifi_wakeup_available">1</integer>
-
     <!-- Flag indicating whether the assist disclosure can be disabled using
          ASSIST_DISCLOSURE_ENABLED. -->
     <bool name="config_allowDisablingAssistDisclosure">true</bool>
