@@ -144,6 +144,7 @@ PRODUCT_PACKAGES += \
     Longshot \
     messaging \
     OmniStyle \
+    Recorder \
     SoundPickerPrebuilt \
     Stk \
     Terminal \
