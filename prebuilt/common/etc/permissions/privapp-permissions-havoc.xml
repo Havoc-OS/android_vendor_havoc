@@ -34,6 +34,7 @@
         <permission name="android.permission.CHANGE_CONFIGURATION"/>
         <permission name="android.permission.MODIFY_DAY_NIGHT_MODE"/>
         <permission name="android.permission.NAVIGATION_EDITOR"/>
+        <permission name="android.permission.WRITE_APN_SETTINGS"/>
         <permission name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS" />
         <permission name="lineageos.permission.MANAGE_LIVEDISPLAY" />
     </privapp-permissions>
