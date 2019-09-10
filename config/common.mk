@@ -125,6 +125,7 @@ PRODUCT_PACKAGES += \
     GalleryGoPrebuilt \
     NexusLauncherRelease \
     PixelThemes \
+    SafetyHubPrebuilt \
     SettingsIntelligenceGooglePrebuilt \
     SoundPickerPrebuilt
 
