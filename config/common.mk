@@ -98,6 +98,9 @@ include vendor/havoc/config/aosp_audio.mk
 # Include Havoc audio files
 include vendor/havoc/config/havoc_audio.mk
 
+# Include Google fonts
+include vendor/havoc/config/fonts.mk
+
 # TWRP
 ifeq ($(WITH_TWRP),true)
 include vendor/havoc/config/twrp.mk
