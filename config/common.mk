@@ -82,7 +82,8 @@ PRODUCT_COPY_FILES += \
 
 # This is Havoc!
 PRODUCT_COPY_FILES += \
-    vendor/havoc/config/permissions/privapp-permissions-havoc.xml:system/etc/permissions/privapp-permissions-havoc.xml
+    vendor/havoc/config/permissions/privapp-permissions-havoc-system.xml:system/etc/permissions/privapp-permissions-havoc.xml \
+    vendor/havoc/config/permissions/privapp-permissions-havoc-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-havoc.xml \
 
 # Hidden API whitelist
 PRODUCT_COPY_FILES += \
