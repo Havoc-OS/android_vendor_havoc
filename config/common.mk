@@ -35,63 +35,63 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/havoc/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/havoc/prebuilt/common/bin/50-havoc.sh:system/addon.d/50-havoc.sh \
-    vendor/havoc/prebuilt/common/bin/blacklist:system/addon.d/blacklist
+    vendor/havoc/prebuilt/common/bin/50-havoc.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-havoc.sh \
+    vendor/havoc/prebuilt/common/bin/blacklist:$(TARGET_COPY_OUT_SYSTEM)/addon.d/blacklist
 
 ifeq ($(AB_OTA_UPDATER),true)
 PRODUCT_COPY_FILES += \
-    vendor/havoc/prebuilt/common/bin/backuptool_ab.sh:system/bin/backuptool_ab.sh \
-    vendor/havoc/prebuilt/common/bin/backuptool_ab.functions:system/bin/backuptool_ab.functions \
-    vendor/havoc/prebuilt/common/bin/backuptool_postinstall.sh:system/bin/backuptool_postinstall.sh
+    vendor/havoc/prebuilt/common/bin/backuptool_ab.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_ab.sh \
+    vendor/havoc/prebuilt/common/bin/backuptool_ab.functions:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_ab.functions \
+    vendor/havoc/prebuilt/common/bin/backuptool_postinstall.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_postinstall.sh
 endif
 
 # Backup Services whitelist
 PRODUCT_COPY_FILES += \
-    vendor/havoc/config/permissions/backup.xml:system/etc/sysconfig/backup.xml
+    vendor/havoc/config/permissions/backup.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/backup.xml
 
 # Havoc-specific broadcast actions whitelist
 PRODUCT_COPY_FILES += \
-    vendor/havoc/config/permissions/havoc-sysconfig.xml:system/etc/sysconfig/havoc-sysconfig.xml
+    vendor/havoc/config/permissions/havoc-sysconfig.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/havoc-sysconfig.xml
 
 # init.d support
 PRODUCT_COPY_FILES += \
-    vendor/havoc/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
-    vendor/havoc/prebuilt/common/bin/sysinit:system/bin/sysinit
+    vendor/havoc/prebuilt/common/etc/init.d/00banner:$(TARGET_COPY_OUT_SYSTEM)/etc/init.d/00banner \
+    vendor/havoc/prebuilt/common/bin/sysinit:$(TARGET_COPY_OUT_SYSTEM)/bin/sysinit
 
 ifneq ($(TARGET_BUILD_VARIANT),user)
 # userinit support
 PRODUCT_COPY_FILES += \
-    vendor/havoc/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
+    vendor/havoc/prebuilt/common/etc/init.d/90userinit:$(TARGET_COPY_OUT_SYSTEM)/etc/init.d/90userinit
 endif
 
 # Copy all Havoc-specific init rc files
 $(foreach f,$(wildcard vendor/havoc/prebuilt/common/etc/init/*.rc),\
-	$(eval PRODUCT_COPY_FILES += $(f):system/etc/init/$(notdir $f)))
+	$(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_SYSTEM)/etc/init/$(notdir $f)))
 
 # Copy over added mimetype supported in libcore.net.MimeUtils
 PRODUCT_COPY_FILES += \
-    vendor/havoc/prebuilt/common/lib/content-types.properties:system/lib/content-types.properties
+    vendor/havoc/prebuilt/common/lib/content-types.properties:$(TARGET_COPY_OUT_SYSTEM)/lib/content-types.properties
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
+    frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.sip.voip.xml
 
 # Enable wireless Xbox 360 controller support
 PRODUCT_COPY_FILES += \
-    frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_0719.kl
+    frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/Vendor_045e_Product_0719.kl
 
 # This is Havoc!
 PRODUCT_COPY_FILES += \
-    vendor/havoc/config/permissions/privapp-permissions-havoc-system.xml:system/etc/permissions/privapp-permissions-havoc.xml \
+    vendor/havoc/config/permissions/privapp-permissions-havoc-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-havoc.xml \
     vendor/havoc/config/permissions/privapp-permissions-havoc-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-havoc.xml \
 
 # Hidden API whitelist
 PRODUCT_COPY_FILES += \
-    vendor/havoc/config/permissions/havoc-hiddenapi-package-whitelist.xml:system/etc/permissions/havoc-hiddenapi-package-whitelist.xml
+    vendor/havoc/config/permissions/havoc-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/havoc-hiddenapi-package-whitelist.xml
 
 # Power whitelist
 PRODUCT_COPY_FILES += \
-    vendor/havoc/config/permissions/havoc-power-whitelist.xml:system/etc/sysconfig/havoc-power-whitelist.xml
+    vendor/havoc/config/permissions/havoc-power-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/havoc-power-whitelist.xml
 
 # Include AOSP audio files
 include vendor/havoc/config/aosp_audio.mk
