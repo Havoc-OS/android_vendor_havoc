@@ -119,7 +119,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ExactCalculator \
     Exchange2 \
-    Terminal
+    Terminal \
+    ThemePicker
 
 # Extra tools in Havoc
 PRODUCT_PACKAGES += \
