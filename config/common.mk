@@ -122,6 +122,10 @@ PRODUCT_PACKAGES += \
     Terminal \
     ThemePicker
 
+# Havoc packages
+PRODUCT_PACKAGES += \
+    Jelly
+
 # Extra tools in Havoc
 PRODUCT_PACKAGES += \
     7z \
