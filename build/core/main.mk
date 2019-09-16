@@ -1,2 +1,2 @@
-# Include LineageOS versions
-include $(TOPDIR)vendor/lineage/build/core/main_version.mk
+# Include Havoc-OS versions
+include $(TOPDIR)vendor/havoc/build/core/main_version.mk

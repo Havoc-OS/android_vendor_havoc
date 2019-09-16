@@ -2,12 +2,18 @@
 #
 # Print startup info
 #
-L="log -p i -t lineage"
+L="log -p i -t havoc"
 
-$L "_ _                                       "
-$L "| (_)_ __   ___  __ _  __ _  ___  ___  ___ "
-$L "| | | '_ \\ / _ \\/ _\` |/ _\` |/ _ \\/ _ \\/ __|"
-$L "| | | | | |  __/ (_| | (_| |  __/ (_) \\__ \\"
-$L "|_|_|_| |_|\\___|\\__,_|\\__, |\\___|\\___/|___/"
-$L "                      |___/"
-$L "Welcome to Android `getprop ro.build.version.release` / LineageOS-`getprop ro.lineage.version`";
+$L "**********************************************"
+$L "                                              "
+$L "      dMP dMP .aMMMb  dMP dMP .aMMMb  .aMMMb  "
+$L "     dMP dMP dMP'dMP dMP dMP dMP'dMP dMP'VMP  "
+$L "    dMMMMMP dMMMMMP dMP dMP dMP dMP dMP       "
+$L "   dMP dMP dMP dMP  YMvAP' cMP.aMP dMP.aMP    "
+$L "  dMP dMP dMP dMP    VP'   VMMMP'  VMMMP'     "
+$L "                                              "
+$L "**********************************************"
+$L "**************** Android 10.0 ****************"
+$L "************* Welcome to Havoc-OS ************"
+$L "**********************************************"
+$L `getprop ro.build.version.release` / Havoc-OS-`getprop ro.havoc.version`";

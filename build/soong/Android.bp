@@ -1,14 +1,14 @@
 bootstrap_go_package {
-    name: "soong-lineage",
-    pkgPath: "lineage/soong/android",
+    name: "soong-havoc",
+    pkgPath: "havoc/soong/android",
     srcs: [
         "android/variable.go",
     ],
 }
 
 bootstrap_go_package {
-    name: "soong-lineage-generator",
-    pkgPath: "lineage/soong/generator",
+    name: "soong-havoc-generator",
+    pkgPath: "havoc/soong/generator",
     deps: [
         "blueprint",
         "blueprint-pathtools",
@@ -23,7 +23,7 @@ bootstrap_go_package {
     pluginFor: ["soong_build"],
 }
 
-lineage_generator {
+havoc_generator {
     name: "generated_kernel_includes",
 
     // The headers make command
