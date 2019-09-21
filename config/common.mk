@@ -13,11 +13,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.com.google.clientidbase=$(PRODUCT_GMS_CLIENTID_BASE)
 endif
 
-# Default notification/alarm sounds
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.config.notification_sound=Argon.ogg \
-    ro.config.alarm_alert=Hassium.ogg
-
 ifneq ($(TARGET_BUILD_VARIANT),user)
 # Thank you, please drive thru!
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.dun.override=0
@@ -83,7 +78,7 @@ PRODUCT_COPY_FILES += \
 # This is Havoc!
 PRODUCT_COPY_FILES += \
     vendor/havoc/config/permissions/privapp-permissions-havoc-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-havoc.xml \
-    vendor/havoc/config/permissions/privapp-permissions-havoc-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-havoc.xml \
+    vendor/havoc/config/permissions/privapp-permissions-havoc-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-havoc.xml
 
 # Hidden API whitelist
 PRODUCT_COPY_FILES += \
@@ -92,12 +87,6 @@ PRODUCT_COPY_FILES += \
 # Power whitelist
 PRODUCT_COPY_FILES += \
     vendor/havoc/config/permissions/havoc-power-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/havoc-power-whitelist.xml
-
-# Include AOSP audio files
-include vendor/havoc/config/aosp_audio.mk
-
-# Include Havoc audio files
-include vendor/havoc/config/havoc_audio.mk
 
 # Include Google fonts
 include vendor/havoc/config/fonts.mk
