@@ -120,7 +120,9 @@ PRODUCT_PACKAGES += \
 
 # Havoc packages
 PRODUCT_PACKAGES += \
-    Jelly
+    Jelly \
+    NexusLauncherRelease \
+    SettingsIntelligenceGooglePrebuilt
 
 # Extra tools in Havoc
 PRODUCT_PACKAGES += \
