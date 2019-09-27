@@ -123,7 +123,7 @@ PRODUCT_PACKAGES += \
 
 # Havoc packages
 PRODUCT_PACKAGES += \
-    Jelly \
+    Browser \
     NexusLauncherRelease \
     SettingsIntelligenceGooglePrebuilt
 
