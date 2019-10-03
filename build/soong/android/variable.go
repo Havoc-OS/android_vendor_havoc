@@ -29,9 +29,6 @@ type Product_variables struct {
 	Supports_hw_fde_perf struct {
 		Cflags []string
 	}
-	Supports_legacy_hw_fde struct {
-		Cflags []string
-	}
 	Target_init_vendor_lib struct {
 		Whole_static_libs []string
 	}
@@ -89,7 +86,6 @@ type ProductVariables struct {
 	Specific_camera_parameter_library  *string `json:",omitempty"`
 	Supports_hw_fde  *bool `json:",omitempty"`
 	Supports_hw_fde_perf  *bool `json:",omitempty"`
-	Supports_legacy_hw_fde  *bool `json:",omitempty"`
 	Target_init_vendor_lib  *string `json:",omitempty"`
 	Target_camera_needs_client_info  *bool `json:",omitempty"`
 	Target_process_sdk_version_override  *string `json:",omitempty"`
