@@ -18,7 +18,7 @@ type Product_variables struct {
 		Cflags []string
 		Srcs []string
 	}
-	Should_skip_waiting_for_qsee struct {
+	Should_wait_for_qsee struct {
 		Cflags []string
 	}
 	Supports_hw_fde struct {
@@ -82,7 +82,7 @@ type ProductVariables struct {
 	Bootloader_message_offset  *int `json:",omitempty"`
 	Has_legacy_camera_hal1  *bool `json:",omitempty"`
 	Needs_camera_boottime_timestamp  *bool `json:",omitempty"`
-	Should_skip_waiting_for_qsee  *bool `json:",omitempty"`
+	Should_wait_for_qsee  *bool `json:",omitempty"`
 	Specific_camera_parameter_library  *string `json:",omitempty"`
 	Supports_hw_fde  *bool `json:",omitempty"`
 	Supports_hw_fde_perf  *bool `json:",omitempty"`
