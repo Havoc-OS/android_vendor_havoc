@@ -126,6 +126,7 @@ PRODUCT_PACKAGES += \
     Browser \
     GalleryGoPrebuilt \
     NexusLauncherRelease \
+    PixelThemes \
     SettingsIntelligenceGooglePrebuilt
 
 # Overlays
