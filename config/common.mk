@@ -128,7 +128,8 @@ PRODUCT_PACKAGES += \
     GalleryGoPrebuilt \
     NexusLauncherRelease \
     PixelThemes \
-    SettingsIntelligenceGooglePrebuilt
+    SettingsIntelligenceGooglePrebuilt \
+    SoundPickerPrebuilt
 
 # Overlays
 PRODUCT_PACKAGES += \
