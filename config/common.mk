@@ -16,11 +16,6 @@ endif
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.selinux=1
 
-ifneq ($(TARGET_BUILD_VARIANT),user)
-# Thank you, please drive thru!
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.dun.override=0
-endif
-
 ifeq ($(TARGET_BUILD_VARIANT),eng)
 # Disable ADB authentication
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=0
