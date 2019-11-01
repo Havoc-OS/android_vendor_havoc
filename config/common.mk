@@ -116,6 +116,7 @@ PRODUCT_PACKAGES += \
 # Havoc packages
 PRODUCT_PACKAGES += \
     CustomDoze \
+    DefaultThemesStub \
     ShadyQuickStep \
     TouchGestures
 
