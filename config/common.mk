@@ -29,6 +29,19 @@ else
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
 
+# SetupWizard
+PRODUCT_PRODUCT_PROPERTIES += \
+    setupwizard.enable_assist_gesture_training=true \
+    setupwizard.feature.baseline_setupwizard_enabled=true \
+    setupwizard.feature.show_pixel_tos=true \
+    setupwizard.feature.show_support_link_in_deferred_setup=false \
+    setupwizard.theme=glif_v3_light
+
+# IME
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.com.google.ime.bs_theme=true \
+    ro.com.google.ime.theme_id=5
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
