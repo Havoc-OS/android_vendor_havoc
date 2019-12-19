@@ -132,8 +132,9 @@ PRODUCT_PACKAGES += \
     CustomDoze \
     GalleryGoPrebuilt \
     NexusLauncherRelease \
+    NexusWallpapersStubPrebuilt2019Static \
     OmniStyle \
-    PixelThemes \
+    PixelThemesStub2019 \
     SafetyHubPrebuilt \
     SettingsIntelligenceGooglePrebuilt \
     SoundPickerPrebuilt
