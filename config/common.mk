@@ -138,7 +138,8 @@ PRODUCT_PACKAGES += \
     PixelThemesStub2019 \
     SafetyHubPrebuilt \
     SettingsIntelligenceGooglePrebuilt \
-    SoundPickerPrebuilt
+    SoundPickerPrebuilt \
+    TouchGestures
 
 # Overlays
 PRODUCT_PACKAGES += \
