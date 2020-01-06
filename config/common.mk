@@ -132,7 +132,6 @@ PRODUCT_PACKAGES += \
     Browser \
     CustomDoze \
     GalleryGoPrebuilt \
-    LatinIMEGooglePrebuilt \
     NexusLauncherRelease \
     NexusWallpapersStubPrebuilt2019Static \
     OmniStyle \
