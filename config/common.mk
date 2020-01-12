@@ -152,6 +152,10 @@ PRODUCT_PACKAGES += \
     AccentColorBlueGrayOverlay \
     AccentColorMintOverlay
 
+# Primary colors
+PRODUCT_PACKAGES += \
+    PrimaryColorOceanOverlay
+
 # Offline charger
 PRODUCT_PACKAGES += \
     charger_res_images \
