@@ -154,6 +154,7 @@ PRODUCT_PACKAGES += \
 
 # Primary colors
 PRODUCT_PACKAGES += \
+    PrimaryColorNatureOverlay
     PrimaryColorOceanOverlay
 
 # Offline charger
