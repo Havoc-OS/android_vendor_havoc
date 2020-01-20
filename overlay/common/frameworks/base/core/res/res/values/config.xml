@@ -273,4 +273,7 @@
     <!-- Amount of time in ms the user needs to press the relevant keys to trigger the
          screenshot chord -->
     <integer name="config_screenshotChordKeyTimeout">0</integer>
+
+    <!-- Smart replies in notifications: Whether we disable the feature unless the app targets P -->
+    <bool name="config_smart_replies_in_notifications_requires_targeting_p">false</bool>
 </resources>
