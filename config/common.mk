@@ -173,18 +173,6 @@ PRODUCT_PACKAGES += \
     wget \
     zip
 
-# Charger
-PRODUCT_PACKAGES += \
-    charger_res_images
-
-# Custom off-mode charger
-ifeq ($(WITH_HAVOC_CHARGER),true)
-PRODUCT_PACKAGES += \
-    havoc_charger_res_images \
-    font_log.png \
-    libhealthd.havoc
-endif
-
 # Filesystems tools
 PRODUCT_PACKAGES += \
     fsck.exfat \
