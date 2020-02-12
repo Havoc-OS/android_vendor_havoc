@@ -261,6 +261,9 @@ ifeq ($(WITH_GAPPS),true)
 include vendor/gapps/config.mk
 endif
 
+# Fonts
+include vendor/havoc/config/fonts.mk
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/havoc/config/partner_gms.mk
 -include vendor/havoc/config/version.mk
