@@ -261,6 +261,9 @@ ifeq ($(WITH_GAPPS),true)
 include vendor/gapps/config.mk
 endif
 
+# Audio
+include vendor/havoc/config/audio.mk
+
 # Fonts
 include vendor/havoc/config/fonts.mk
 
