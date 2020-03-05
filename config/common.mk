@@ -47,10 +47,6 @@ PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/bin/backuptool_postinstall.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/backuptool_postinstall.sh
 endif
 
-# system mount
-PRODUCT_COPY_FILES += \
-    vendor/havoc/prebuilt/common/bin/system-mount.sh:install/bin/system-mount.sh
-
 # Backup Services whitelist
 PRODUCT_COPY_FILES += \
     vendor/havoc/config/permissions/backup.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/backup.xml
