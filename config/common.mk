@@ -237,9 +237,6 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/havoc/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/havoc/overlay/common
 
-# Bootanimation
-include vendor/havoc/config/bootanimation.mk
-
 # Enable ccache
 USE_CCACHE := true
 
