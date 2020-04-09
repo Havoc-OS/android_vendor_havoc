@@ -13,7 +13,7 @@ endif
 TARGET_PRODUCT_SHORT := $(subst havoc_,,$(HAVOC_BUILD_TYPE))
 
 # Set all versions
-HAVOC_VERSION = 3.3
+HAVOC_VERSION = 3.4
 HAVOC_BUILD_DATE := $(shell date -u +%d-%m-%Y)
 HAVOC_FINGERPRINT := Havoc-OS/v$(HAVOC_VERSION)/$(PLATFORM_VERSION)/$(TARGET_PRODUCT_SHORT)/$(shell date -u +%Y%m%d)/$(shell date -u +%H%M)
 
