@@ -129,15 +129,10 @@ PRODUCT_PACKAGES += \
     CustomDoze \
     GalleryGoPrebuilt \
     Longshot \
-    NexusLauncherRelease \
     OmniStyle \
     PixelThemesStub2019 \
     SoundPickerPrebuilt \
     TouchGestures
-
-# Overlays
-PRODUCT_PACKAGES += \
-    NexusLauncherReleaseOverlay
 
 # Accents
 PRODUCT_PACKAGES += \
