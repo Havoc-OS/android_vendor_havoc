@@ -131,6 +131,7 @@ PRODUCT_PACKAGES += \
     Longshot \
     OmniStyle \
     PixelThemesStub2019 \
+    ShadyQuickStep \
     SoundPickerPrebuilt \
     TouchGestures
 
