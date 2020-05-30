@@ -47,7 +47,7 @@ $(TARGET_GENERATED_BOOTANIMATION): $(SOONG_ZIP)
 	    mkdir -p $(INTERMEDIATES)/part$$part_cnt; \
 	done; \
 	prebuilts/tools-extras/${HOST_OS}-x86/bin/mogrify -resize $$RESOLUTION -colors 250 $(INTERMEDIATES)/*/*.png; \
-	echo "$$IMAGESCALEWIDTH $$IMAGESCALEHEIGHT 60" > $(INTERMEDIATES)/desc.txt; \
+	echo "$$IMAGESCALEWIDTH $$IMAGESCALEHEIGHT 45" > $(INTERMEDIATES)/desc.txt; \
 	cat vendor/havoc/bootanimation/desc.txt >> $(INTERMEDIATES)/desc.txt
 	$(hide) $(SOONG_ZIP) -L 0 -o $(TARGET_GENERATED_BOOTANIMATION) -C $(INTERMEDIATES) -D $(INTERMEDIATES)
 
