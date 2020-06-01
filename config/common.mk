@@ -152,7 +152,18 @@ PRODUCT_PACKAGES += \
     AccentColorFlatPinkOverlay \
     AccentColorCyanOverlay \
     AccentColorBlueGrayOverlay \
-    AccentColorMintOverlay
+    AccentColorMintOverlay \
+    AccentColorAmberOverlay \
+    AccentColorCandyRedOverlay \
+    AccentColorDdayGreenOverlay \
+    AccentColorFrenchBleuOverlay \
+    AccentColorHeirloomBleuOverlay \
+    AccentColorHolillusionOverlay \
+    AccentColorIllusionsPurpleOverlay \
+    AccentColorObfusBleuOverlay \
+    AccentColorOnePlusRedOverlay \
+    AccentColorSeasideMintOverlay \
+    AccentColorWarmthOrangeOverlay
 
 # Primary colors
 PRODUCT_PACKAGES += \
