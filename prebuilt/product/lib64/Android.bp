@@ -1,11 +1,10 @@
 cc_prebuilt_library_shared {
     name: "libjni_latinimegoogle",
-
     srcs: ["libjni_latinimegoogle.so"],
-
     overrides: ["libjni_latinime"],
     product_specific: true,
     compile_multilib: "64",
+    check_elf_files: false,
     strip: {
         none: true,
     },
