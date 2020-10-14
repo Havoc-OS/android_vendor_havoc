@@ -1,12 +1,4 @@
 bootstrap_go_package {
-    name: "soong-havoc",
-    pkgPath: "havoc/soong/android",
-    srcs: [
-        "android/variable.go",
-    ],
-}
-
-bootstrap_go_package {
     name: "soong-havoc-generator",
     pkgPath: "havoc/soong/generator",
     deps: [
