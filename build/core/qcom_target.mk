@@ -29,4 +29,7 @@ ifneq ($(FORCE_QCOM_DISPLAY_HAL_VARIANT),)
 $(call set-device-specific-path,DISPLAY,display,hardware/qcom-caf/$(FORCE_QCOM_DISPLAY_HAL_VARIANT)/display)
 endif
 
+PRODUCT_SOONG_NAMESPACES += \
+    $(call project-path-for,qcom-data-ipa-cfg-mgr)
+
 endif
