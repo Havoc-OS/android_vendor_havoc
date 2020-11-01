@@ -185,6 +185,10 @@ PRODUCT_PACKAGES += \
     HideCutout \
     StatusBarStock
 
+# Launcher overlay
+PRODUCT_PACKAGES += \
+    ShadyQuickStepAppLockOverlay
+
 # Extra tools in Havoc
 PRODUCT_PACKAGES += \
     7z \
