@@ -180,6 +180,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ShadyQuickStepAppLockOverlay
 
+# SystemUI plugins
+PRODUCT_PACKAGES += \
+    QuickAccessWallet
+
 # Extra tools in Havoc
 PRODUCT_PACKAGES += \
     7z \
