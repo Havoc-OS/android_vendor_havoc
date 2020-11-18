@@ -114,60 +114,10 @@ PRODUCT_PACKAGES += \
     ShadyQuickStep \
     TouchGestures
 
-# Accents
-PRODUCT_PACKAGES += \
-    AccentColorYellowOverlay \
-    AccentColorVioletOverlay \
-    AccentColorTealOverlay \
-    AccentColorRedOverlay \
-    AccentColorQGreenOverlay \
-    AccentColorPinkOverlay \
-    AccentColorLightPurpleOverlay \
-    AccentColorIndigoOverlay \
-    AccentColorFlatPinkOverlay \
-    AccentColorCyanOverlay \
-    AccentColorBlueGrayOverlay \
-    AccentColorMintOverlay \
-    AccentColorAmberOverlay \
-    AccentColorCandyRedOverlay \
-    AccentColorDdayGreenOverlay \
-    AccentColorFrenchBleuOverlay \
-    AccentColorHeirloomBleuOverlay \
-    AccentColorHolillusionOverlay \
-    AccentColorIllusionsPurpleOverlay \
-    AccentColorObfusBleuOverlay \
-    AccentColorOnePlusRedOverlay \
-    AccentColorSeasideMintOverlay \
-    AccentColorWarmthOrangeOverlay
-
-# Primary colors
-PRODUCT_PACKAGES += \
-    PrimaryColorCharcoalOverlay \
-    PrimaryColorFlameOverlay \
-    PrimaryColorGrayOverlay \
-    PrimaryColorNatureOverlay \
-    PrimaryColorOceanOverlay
-
 # Offline charger
 PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images
-
-# Cutout control overlays
-PRODUCT_PACKAGES += \
-    HideCutout \
-    StatusBarStock
-
-# RRO Overlays
-PRODUCT_PACKAGES += \
-    PixelSetupWizardAodOverlay \
-    ShadyQuickStepAppLockOverlay \
-    IconPackCircularPixelLauncherOverlay \
-    IconPackCircularPixelThemePickerOverlay \
-    IconPackFilledPixelLauncherOverlay \
-    IconPackFilledPixelThemePickerOverlay \
-    IconPackRoundedPixelLauncherOverlay \
-    IconPackRoundedPixelThemePickerOverlay \
 
 # SystemUI plugins
 PRODUCT_PACKAGES += \
@@ -273,6 +223,9 @@ include vendor/havoc/config/audio.mk
 
 # Fonts
 include vendor/havoc/config/fonts.mk
+
+# RRO Overlays
+include vendor/havoc/config/rro_overlays.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/havoc/config/partner_gms.mk
