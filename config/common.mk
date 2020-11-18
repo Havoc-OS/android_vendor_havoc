@@ -239,8 +239,14 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
     ShadyQuickStep
 
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/havoc/overlay
-DEVICE_PACKAGE_OVERLAYS += vendor/havoc/overlay/common
+# Overlays
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    vendor/havoc/overlay \
+    vendor/havoc/overlay-pixel \
+
+DEVICE_PACKAGE_OVERLAYS += \
+    vendor/havoc/overlay/common \
+    vendor/havoc/overlay-pixel/common
 
 # Enable ccache
 USE_CCACHE := true
