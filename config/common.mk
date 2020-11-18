@@ -215,17 +215,17 @@ PRODUCT_PACKAGES += \
 
 # GApps
 ifeq ($(WITH_GAPPS),true)
-include vendor/gapps/config.mk
+$(call inherit-product, vendor/gapps/config.mk)
 endif
 
 # Audio
-include vendor/havoc/config/audio.mk
+$(call inherit-product, vendor/havoc/config/audio.mk)
 
 # Fonts
-include vendor/havoc/config/fonts.mk
+$(call inherit-product, vendor/havoc/config/fonts.mk)
 
 # RRO Overlays
-include vendor/havoc/config/rro_overlays.mk
+$(call inherit-product, vendor/havoc/config/rro_overlays.mk)
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/havoc/config/partner_gms.mk
