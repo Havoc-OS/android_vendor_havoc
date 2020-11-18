@@ -162,6 +162,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ShadyQuickStepAppLockOverlay
 
+# SetupWizard overlay
+PRODUCT_PACKAGES += \
+    PixelSetupWizardAodOverlay
+
 # SystemUI plugins
 PRODUCT_PACKAGES += \
     QuickAccessWallet
