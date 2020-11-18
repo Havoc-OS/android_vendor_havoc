@@ -158,13 +158,16 @@ PRODUCT_PACKAGES += \
     HideCutout \
     StatusBarStock
 
-# Launcher overlay
+# RRO Overlays
 PRODUCT_PACKAGES += \
-    ShadyQuickStepAppLockOverlay
-
-# SetupWizard overlay
-PRODUCT_PACKAGES += \
-    PixelSetupWizardAodOverlay
+    PixelSetupWizardAodOverlay \
+    ShadyQuickStepAppLockOverlay \
+    IconPackCircularPixelLauncherOverlay \
+    IconPackCircularPixelThemePickerOverlay \
+    IconPackFilledPixelLauncherOverlay \
+    IconPackFilledPixelThemePickerOverlay \
+    IconPackRoundedPixelLauncherOverlay \
+    IconPackRoundedPixelThemePickerOverlay \
 
 # SystemUI plugins
 PRODUCT_PACKAGES += \
