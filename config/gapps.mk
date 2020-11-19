@@ -34,4 +34,5 @@ DEVICE_PACKAGE_OVERLAYS += vendor/havoc/overlay-pixel/common
 
 # RRO Overlays
 PRODUCT_PACKAGES += \
+    FilesOverlay \
     PixelSetupWizardAodOverlay
