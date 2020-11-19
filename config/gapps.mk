@@ -36,4 +36,5 @@ DEVICE_PACKAGE_OVERLAYS += vendor/havoc/overlay-pixel/common
 PRODUCT_PACKAGES += \
     FilesOverlay \
     GooglePermissionControllerOverlay \
+    PixelDocumentsUIGoogleOverlay \
     PixelSetupWizardAodOverlay
