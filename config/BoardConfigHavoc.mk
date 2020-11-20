@@ -1,3 +1,6 @@
+# Safetynet
+TARGET_FORCE_BUILD_FINGERPRINT := google/crosshatch/crosshatch:11/RQ1A.201205.003/6906706:user/release-keys
+
 # Charger
 ifeq ($(WITH_HAVOC_CHARGER),true)
     BOARD_HAL_STATIC_LIBRARIES := libhealthd.havoc
