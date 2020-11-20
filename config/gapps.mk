@@ -32,6 +32,13 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/havoc/overlay-pixel
 DEVICE_PACKAGE_OVERLAYS += vendor/havoc/overlay-pixel/common
 
+# Live Wallpapers
+TARGET_INCLUDE_LIVE_WALLPAPERS ?= true
+ifeq ($(TARGET_INCLUDE_LIVE_WALLPAPERS),true)
+PRODUCT_PACKAGES += \
+    PixelLiveWallpapersOverlay
+endif
+
 # RRO Overlays
 PRODUCT_PACKAGES += \
     FilesOverlay \
