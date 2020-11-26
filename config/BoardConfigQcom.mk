@@ -64,9 +64,7 @@ endif
 # List of targets that use master side content protection
 MASTER_SIDE_CP_TARGET_LIST := msm8996 $(UM_4_4_FAMILY) $(UM_4_9_FAMILY) $(UM_4_14_FAMILY) $(UM_4_19_FAMILY)
 
-ifneq ($(OVERRIDE_QCOM_HARDWARE_VARIANT),)
-    QCOM_HARDWARE_VARIANT := $(OVERRIDE_QCOM_HARDWARE_VARIANT)
-else ifneq ($(filter $(B_FAMILY),$(TARGET_BOARD_PLATFORM)),)
+ifneq ($(filter $(B_FAMILY),$(TARGET_BOARD_PLATFORM)),)
     MSM_VIDC_TARGET_LIST := $(B_FAMILY)
     QCOM_HARDWARE_VARIANT := msm8974
 else ifneq ($(filter $(B64_FAMILY),$(TARGET_BOARD_PLATFORM)),)
@@ -95,25 +93,14 @@ else
     QCOM_HARDWARE_VARIANT := $(TARGET_BOARD_PLATFORM)
 endif
 
-ifneq ($(TARGET_USE_AOSP_SURFACEFLINGER), true)
-    # Required for frameworks/native
-    ifeq ($(QCOM_HARDWARE_VARIANT),msm8996)
-        TARGET_USES_QCOM_UM_FAMILY := true
-        TARGET_USES_QCOM_UM_3_18_FAMILY := true
-    else ifeq ($(QCOM_HARDWARE_VARIANT),msm8998)
-        TARGET_USES_QCOM_UM_FAMILY := true
-        TARGET_USES_QCOM_UM_4_4_FAMILY := true
-    else ifeq ($(QCOM_HARDWARE_VARIANT),sdm845)
-        TARGET_USES_QCOM_UM_FAMILY := true
-        TARGET_USES_QCOM_UM_4_9_FAMILY := true
-    else ifeq ($(QCOM_HARDWARE_VARIANT),sm8150)
-        TARGET_USES_QCOM_UM_FAMILY := true
-        TARGET_USES_QCOM_UM_4_14_FAMILY := true
-    endif
+# Allow a device to manually override which HALs it wants to use
+ifneq ($(OVERRIDE_QCOM_HARDWARE_VARIANT),)
+    QCOM_HARDWARE_VARIANT := $(OVERRIDE_QCOM_HARDWARE_VARIANT)
 endif
 
-PRODUCT_SOONG_NAMESPACES += \
-    hardware/qcom-caf/$(QCOM_HARDWARE_VARIANT)
+# Allow a device to opt-out hardset of PRODUCT_SOONG_NAMESPACES
+QCOM_SOONG_NAMESPACE ?= hardware/qcom-caf/$(QCOM_HARDWARE_VARIANT)
+PRODUCT_SOONG_NAMESPACES += $(QCOM_SOONG_NAMESPACE)
 
 # Add data-ipa-cfg-mgr to PRODUCT_SOONG_NAMESPACES if needed
 ifneq ($(USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR),true)
