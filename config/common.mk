@@ -211,6 +211,8 @@ PRODUCT_PACKAGES += \
 ifeq ($(WITH_GAPPS),true)
 $(call inherit-product, vendor/havoc/config/gapps.mk)
 else
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/havoc/overlay-aosp
+DEVICE_PACKAGE_OVERLAYS += vendor/havoc/overlay-aosp/common
 PRODUCT_PACKAGES += \
     GalleryGoPrebuilt
 endif
