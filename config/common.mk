@@ -80,9 +80,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/havoc/config/permissions/havoc-power-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/havoc-power-whitelist.xml
 
-# Include Google fonts
-include vendor/havoc/config/fonts.mk
-
 # TWRP
 ifeq ($(WITH_TWRP),true)
 include vendor/havoc/config/twrp.mk
@@ -112,14 +109,9 @@ PRODUCT_PACKAGES += \
 
 # Havoc packages
 PRODUCT_PACKAGES += \
-    Browser \
     CustomDoze \
     GalleryGoPrebuilt \
-    Longshot \
-    OmniStyle \
-    PixelThemesStub2019 \
     ShadyQuickStep \
-    SoundPickerPrebuilt \
     TouchGestures
 
 # Accents
@@ -160,12 +152,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images
-
-# LatinIME lib
-ifneq ($(WITH_GAPPS),true)
-PRODUCT_PACKAGES += \
-    libjni_latinimegoogle
-endif
 
 # Cutout control overlays
 PRODUCT_PACKAGES += \
@@ -251,7 +237,7 @@ endif
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
-    NexusLauncherRelease
+    ShadyQuickStep
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/havoc/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/havoc/overlay/common
