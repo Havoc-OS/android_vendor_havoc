@@ -197,13 +197,8 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     ShadyQuickStep
 
 # Overlays
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    vendor/havoc/overlay \
-    vendor/havoc/overlay-pixel \
-
-DEVICE_PACKAGE_OVERLAYS += \
-    vendor/havoc/overlay/common \
-    vendor/havoc/overlay-pixel/common
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/havoc/overlay
+DEVICE_PACKAGE_OVERLAYS += vendor/havoc/overlay/common
 
 # Enable ccache
 USE_CCACHE := true
@@ -215,7 +210,7 @@ PRODUCT_PACKAGES += \
 
 # GApps
 ifeq ($(WITH_GAPPS),true)
-$(call inherit-product, vendor/gapps/config.mk)
+$(call inherit-product, vendor/havoc/config/gapps.mk)
 endif
 
 # Audio

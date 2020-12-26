@@ -1,6 +1,5 @@
 # Apps
 PRODUCT_PACKAGES += \
-    PixelSetupWizardAodOverlay \
     ShadyQuickStepAppLockOverlay
 
 # Accents
