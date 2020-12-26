@@ -110,7 +110,6 @@ PRODUCT_PACKAGES += \
 # Havoc packages
 PRODUCT_PACKAGES += \
     CustomDoze \
-    GalleryGoPrebuilt \
     ShadyQuickStep \
     TouchGestures
 
@@ -211,6 +210,9 @@ PRODUCT_PACKAGES += \
 # GApps
 ifeq ($(WITH_GAPPS),true)
 $(call inherit-product, vendor/havoc/config/gapps.mk)
+else
+PRODUCT_PACKAGES += \
+    GalleryGoPrebuilt
 endif
 
 # Audio
