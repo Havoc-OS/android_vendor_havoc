@@ -35,6 +35,12 @@ else
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
 
+# Blur
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.sf.blurs_are_expensive=1 \
+    ro.surface_flinger.supports_background_blur=1 \
+    persist.sys.sf.disable_blurs=1
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/havoc/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
