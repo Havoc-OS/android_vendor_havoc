@@ -51,7 +51,6 @@ PRODUCT_PACKAGES += \
 # RRO Overlays
 PRODUCT_PACKAGES += \
     FilesOverlay \
-    GooglePermissionControllerOverlay \
     GoogleWallpaperPickerOverlay \
     PixelDocumentsUIGoogleOverlay \
     PixelSetupWizardAodOverlay
