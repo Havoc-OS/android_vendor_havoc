@@ -52,5 +52,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FilesOverlay \
     GooglePermissionControllerOverlay \
+    GoogleWallpaperPickerOverlay \
     PixelDocumentsUIGoogleOverlay \
     PixelSetupWizardAodOverlay
