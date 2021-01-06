@@ -17,6 +17,7 @@
 -->
 <resources>
 
-    <string name="themes_stub_package" translatable="false">com.google.android.apps.customization.pixel</string>
+    <string name="clocks_stub_package" translatable="false">com.android.customization.stub</string>
+    <string name="themes_stub_package" translatable="false">com.android.customization.stub</string>
 
 </resources>
