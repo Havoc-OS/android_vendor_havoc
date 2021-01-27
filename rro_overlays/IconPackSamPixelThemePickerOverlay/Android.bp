@@ -1,0 +1,8 @@
+runtime_resource_overlay {
+    name: "IconPackSamPixelThemePickerOverlay",
+    theme: "IconPackSamPixelThemePicker",
+    overrides: ["IconPackSamThemePickerOverlay"],
+    certificate: "platform",
+    sdk_version: "current",
+    product_specific: true
+}

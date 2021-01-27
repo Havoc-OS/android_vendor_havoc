@@ -1,0 +1,8 @@
+runtime_resource_overlay {
+    name: "IconPackVictorPixelLauncherOverlay",
+    theme: "IconPackVictorPixelLauncher",
+    overrides: ["IconPackVictorLauncherOverlay"],
+    certificate: "platform",
+    sdk_version: "current",
+    product_specific: true
+}

@@ -43,8 +43,14 @@ PRODUCT_PACKAGES += \
     IconPackCircularPixelThemePickerOverlay \
     IconPackFilledPixelLauncherOverlay \
     IconPackFilledPixelThemePickerOverlay \
+    IconPackKaiPixelLauncherOverlay \
+    IconPackKaiPixelThemePickerOverlay \
     IconPackRoundedPixelLauncherOverlay \
-    IconPackRoundedPixelThemePickerOverlay
+    IconPackRoundedPixelThemePickerOverlay \
+    IconPackSamPixelLauncherOverlay \
+    IconPackSamPixelThemePickerOverlay \
+    IconPackVictorPixelLauncherOverlay \
+    IconPackVictorPixelThemePickerOverlay
 
 # Primary Colors
 PRODUCT_PACKAGES += \

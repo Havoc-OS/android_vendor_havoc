@@ -1,0 +1,8 @@
+runtime_resource_overlay {
+    name: "IconPackKaiPixelThemePickerOverlay",
+    theme: "IconPackKaiPixelThemePicker",
+    overrides: ["IconPackKaiThemePickerOverlay"],
+    certificate: "platform",
+    sdk_version: "current",
+    product_specific: true
+}
