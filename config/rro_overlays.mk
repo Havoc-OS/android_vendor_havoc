@@ -37,6 +37,7 @@ PRODUCT_PACKAGES += \
     FontSamOverlay \
     FontVictorOverlay
 
+ifeq ($(WITH_GAPPS),true)
 # Icon Packs
 PRODUCT_PACKAGES += \
     IconPackCircularPixelLauncherOverlay \
@@ -51,6 +52,7 @@ PRODUCT_PACKAGES += \
     IconPackSamPixelThemePickerOverlay \
     IconPackVictorPixelLauncherOverlay \
     IconPackVictorPixelThemePickerOverlay
+endif
 
 # Primary Colors
 PRODUCT_PACKAGES += \
