@@ -1,6 +1,6 @@
 # Apps
 PRODUCT_PACKAGES += \
-    ShadyQuickStepAppLockOverlay
+    ShadyQuickStepAOSPOverlay
 
 # Accents
 PRODUCT_PACKAGES += \
@@ -40,17 +40,11 @@ PRODUCT_PACKAGES += \
 ifeq ($(WITH_GAPPS),true)
 # Icon Packs
 PRODUCT_PACKAGES += \
-    IconPackCircularPixelLauncherOverlay \
     IconPackCircularPixelThemePickerOverlay \
-    IconPackFilledPixelLauncherOverlay \
     IconPackFilledPixelThemePickerOverlay \
-    IconPackKaiPixelLauncherOverlay \
     IconPackKaiPixelThemePickerOverlay \
-    IconPackRoundedPixelLauncherOverlay \
     IconPackRoundedPixelThemePickerOverlay \
-    IconPackSamPixelLauncherOverlay \
     IconPackSamPixelThemePickerOverlay \
-    IconPackVictorPixelLauncherOverlay \
     IconPackVictorPixelThemePickerOverlay
 endif
 

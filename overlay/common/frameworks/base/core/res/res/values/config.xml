@@ -176,7 +176,7 @@
     </string-array>
 
     <!-- Colon separated list of package names that should be granted Notification Listener access -->
-    <string name="config_defaultListenerAccessPackages" translatable="false">com.google.android.apps.nexuslauncher:com.google.android.setupwizard:com.google.android.apps.pixelmigrate:com.google.android.as:com.google.android.projection.gearhead</string>
+    <string name="config_defaultListenerAccessPackages" translatable="false">com.android.launcher3:com.google.android.setupwizard:com.google.android.apps.pixelmigrate:com.google.android.as:com.google.android.projection.gearhead</string>
 
     <!-- Package name that should be granted Notification Assistant access -->
     <string name="config_defaultAssistantAccessPackage" translatable="false">com.google.android.ext.services</string>

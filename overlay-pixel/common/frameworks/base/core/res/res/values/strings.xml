@@ -12,7 +12,7 @@
     <string name="config_defaultGallery">com.google.android.apps.photos</string>
     <string name="config_defaultAttentionService">com.google.android.as/com.google.android.apps.miphone.aiai.attention.service.AiAiAttentionService</string>
     <string name="config_defaultDndAccessPackages">com.google.android.GoogleCamera:com.google.android.gms:com.google.intelligence.sense:com.google.android.settings.intelligence:com.google.android.apps.wellbeing:com.google.android.apps.safetyhub:com.google.android.apps.dreamliner:com.google.android.dialer</string>
-    <string name="config_defaultListenerAccessPackages">com.google.android.apps.nexuslauncher:com.google.android.setupwizard:com.google.android.apps.pixelmigrate:com.google.android.as:com.google.android.projection.gearhead:com.google.android.apps.dreamliner</string>
+    <string name="config_defaultListenerAccessPackages">com.android.launcher3:com.google.android.setupwizard:com.google.android.apps.pixelmigrate:com.google.android.as:com.google.android.projection.gearhead:com.google.android.apps.dreamliner</string>
     <string name="config_defaultMusic">com.google.android.music</string>
     <string name="config_defaultNearbySharingComponent">com.google.android.gms/com.google.android.gms.nearby.sharing.ShareSheetActivity</string>
     <string name="config_defaultNetworkRecommendationProviderPackage">com.google.android.gms</string>
@@ -49,6 +49,6 @@
     <string name="config_icon_mask">M50 0C77.6 0 100 22.4 100 50C100 77.6 77.6 100 50 100C22.4 100 0 77.6 0 50C0 22.4 22.4 0 50 0Z</string>
     <!--<string name="config_incidentReportApproverPackage">com.google.android.permissioncontroller</string>-->
     <string name="config_powerSaveModeChangedListenerPackage">com.google.android.flipendo</string>
-    <string name="config_recentsComponentName">com.google.android.apps.nexuslauncher/com.android.quickstep.RecentsActivity</string>
-    <string name="config_secondaryHomePackage">com.google.android.apps.nexuslauncher</string>
+    <!--<string name="config_recentsComponentName">com.google.android.apps.nexuslauncher/com.android.quickstep.RecentsActivity</string>-->
+    <!--<string name="config_secondaryHomePackage">com.google.android.apps.nexuslauncher</string>-->
 </resources>

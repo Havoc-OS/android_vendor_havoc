@@ -53,4 +53,5 @@ PRODUCT_PACKAGES += \
     FilesOverlay \
     GoogleWallpaperPickerOverlay \
     PixelDocumentsUIGoogleOverlay \
-    PixelSetupWizardAodOverlay
+    PixelSetupWizardAodOverlay \
+    ShadyQuickStepGoogleOverlay

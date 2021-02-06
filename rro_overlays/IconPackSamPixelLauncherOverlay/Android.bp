@@ -1,8 +1,0 @@
-runtime_resource_overlay {
-    name: "IconPackSamPixelLauncherOverlay",
-    theme: "IconPackSamPixelLauncher",
-    overrides: ["IconPackSamLauncherOverlay"],
-    certificate: "platform",
-    sdk_version: "current",
-    product_specific: true
-}
