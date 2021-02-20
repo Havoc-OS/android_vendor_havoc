@@ -86,6 +86,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/havoc/config/permissions/havoc-power-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/havoc-power-whitelist.xml
 
+# Shady Launcher
+PRODUCT_COPY_FILES += \
+    vendor/havoc/prebuilt/common/etc/permissions/privapp-permissions-shady-launcher.xml:$(TARGET_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-shady-launcher.xml
+
 # TWRP
 ifeq ($(WITH_TWRP),true)
 include vendor/havoc/config/twrp.mk
