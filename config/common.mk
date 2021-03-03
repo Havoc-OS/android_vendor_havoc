@@ -223,6 +223,10 @@ USE_CCACHE := true
 PRODUCT_PACKAGES += \
     sqlite3
 
+# IORap app launch prefetching using Perfetto traces and madvise
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.iorapd.enable=true
+
 # GApps
 ifeq ($(WITH_GAPPS),true)
 $(call inherit-product, vendor/havoc/config/gapps.mk)
