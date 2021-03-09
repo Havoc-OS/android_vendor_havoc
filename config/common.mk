@@ -112,6 +112,8 @@ OVERRIDE_TARGET_FLATTEN_APEX := true
 PRODUCT_PRODUCT_PROPERTIES += ro.apex.updatable=false
 
 # Bootanimation
+TARGET_SCREEN_WIDTH ?= 1080
+TARGET_SCREEN_HEIGHT ?= 1920
 PRODUCT_PACKAGES += \
     bootanimation.zip
 
