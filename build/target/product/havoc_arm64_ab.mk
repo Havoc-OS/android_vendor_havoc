@@ -12,12 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, build/target/product/aosp_arm.mk)
-$(call inherit-product, build/target/product/gsi_release.mk)
+$(call inherit-product, build/target/product/aosp_arm64_ab.mk)
 
 include vendor/havoc/build/target/product/havoc_generic_target.mk
 
 TARGET_NO_KERNEL_OVERRIDE := true
-TARGET_USES_64_BIT_BINDER := true
 
-PRODUCT_NAME := havoc_arm
+PRODUCT_NAME := havoc_arm64_ab
