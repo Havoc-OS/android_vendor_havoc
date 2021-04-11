@@ -17,6 +17,9 @@
  */
 -->
 <resources>
+    <!-- Display -->
+    <integer name="def_screen_off_timeout">120000</integer>
+
     <bool name="def_wifi_on">true</bool>
 
     <string name="def_backup_transport">com.google.android.gms/.backup.BackupTransportService</string>
