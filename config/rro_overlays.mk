@@ -48,14 +48,6 @@ PRODUCT_PACKAGES += \
     IconPackVictorPixelThemePickerOverlay
 endif
 
-# Primary Colors
-PRODUCT_PACKAGES += \
-    PrimaryColorCharcoalOverlay \
-    PrimaryColorFlameOverlay \
-    PrimaryColorGrayOverlay \
-    PrimaryColorNatureOverlay \
-    PrimaryColorOceanOverlay
-
 # Cutout Control
 PRODUCT_PACKAGES += \
     HideCutout \
