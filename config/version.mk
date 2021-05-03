@@ -4,6 +4,14 @@ ifndef HAVOC_BUILD_TYPE
 HAVOC_BUILD_TYPE := Unofficial
 endif
 
+ifndef HAVOC_MAINTAINER
+HAVOC_MAINTAINER := Unknown
+endif
+
+ifndef HAVOC_GROUP_URL
+HAVOC_GROUP_URL := https://t.me/Havoc_OS
+endif
+
 # Only include Havoc OTA for official builds
 ifeq ($(filter-out Official,$(HAVOC_BUILD_TYPE)),)
     PRODUCT_PACKAGES += \
@@ -12,7 +20,6 @@ endif
 
 TARGET_PRODUCT_SHORT := $(subst havoc_,,$(HAVOC_BUILD_TYPE))
 
-# Set all versions
 HAVOC_VERSION = 4.4
 HAVOC_BUILD_DATE := $(shell date -u +%d-%m-%Y)
 HAVOC_FINGERPRINT := Havoc-OS/v$(HAVOC_VERSION)/$(PLATFORM_VERSION)/$(TARGET_PRODUCT_SHORT)/$(shell date -u +%Y%m%d)/$(shell date -u +%H%M)
