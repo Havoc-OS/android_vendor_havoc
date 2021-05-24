@@ -1,5 +1,4 @@
-#
-# Copyright (C) 2018-2021 The LineageOS Project
+# Copyright (C) 2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,16 +11,11 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_arm.mk \
-    $(LOCAL_DIR)/havoc_arm64.mk \
-    $(LOCAL_DIR)/havoc_x86.mk \
-    $(LOCAL_DIR)/havoc_x86_64.mk \
-    $(LOCAL_DIR)/havoc_arm_ab.mk \
-    $(LOCAL_DIR)/havoc_arm64_ab.mk \
-    $(LOCAL_DIR)/havoc_x86_ab.mk \
-    $(LOCAL_DIR)/havoc_x86_64_ab.mk \
-    $(LOCAL_DIR)/havoc_sdk_phone_x86.mk \
-    $(LOCAL_DIR)/havoc_sdk_phone_x86_64.mk
+$(call inherit-product, build/target/product/sdk_phone_x86_64.mk)
+
+include vendor/havoc/build/target/product/havoc_generic_target.mk
+
+# Overrides
+PRODUCT_NAME := havoc_sdk_phone_x86_64
+PRODUCT_MODEL := Havoc-OS Android SDK built for x86_64
