@@ -25,6 +25,8 @@
 #   TARGET_KERNEL_CROSS_COMPILE_PREFIX = Compiler prefix (e.g. arm-eabi-)
 #                                          defaults to arm-linux-androidkernel- for arm
 #                                                      aarch64-linux-android- for arm64
+#   TARGET_KERNEL_CROSS_COMPILE_PREFIX_ARM32 = Compiler prefix for building vDSO32
+#   						defaults to arm-linux-androidkernel-
 #
 #   TARGET_KERNEL_CLANG_COMPILE        = Compile kernel with clang, defaults to false
 #   TARGET_KERNEL_NEW_GCC_COMPILE      = Compile kernel with newer version GCC, defaults to false
@@ -77,10 +79,24 @@ KERNEL_TOOLCHAIN ?= $(KERNEL_TOOLCHAIN_$(KERNEL_ARCH))
 KERNEL_TOOLCHAIN_PREFIX ?= $(KERNEL_TOOLCHAIN_PREFIX_$(KERNEL_ARCH))
 endif
 
+TARGET_KERNEL_CROSS_COMPILE_PREFIX_ARM32 := $(strip $(TARGET_KERNEL_CROSS_COMPILE_PREFIX_ARM32))
+ifneq ($(TARGET_KERNEL_CROSS_COMPILE_PREFIX_ARM32),)
+KERNEL_TOOLCHAIN_PREFIX_ARM32 ?= $(TARGET_KERNEL_CROSS_COMPILE_PREFIX_ARM32)
+else
+KERNEL_TOOLCHAIN_ARM32 ?= $(KERNEL_TOOLCHAIN_arm)
+KERNEL_TOOLCHAIN_PREFIX_ARM32 ?= $(KERNEL_TOOLCHAIN_PREFIX_arm)
+endif
+
 ifeq ($(KERNEL_TOOLCHAIN),)
 KERNEL_TOOLCHAIN_PATH := $(KERNEL_TOOLCHAIN_PREFIX)
 else
 KERNEL_TOOLCHAIN_PATH := $(KERNEL_TOOLCHAIN)/$(KERNEL_TOOLCHAIN_PREFIX)
+endif
+
+ifeq ($(KERNEL_TOOLCHAIN_ARM32),)
+KERNEL_TOOLCHAIN_PATH_ARM32 := $(KERNEL_TOOLCHAIN_PREFIX_ARM32)
+else
+KERNEL_TOOLCHAIN_PATH_ARM32 := $(KERNEL_TOOLCHAIN_ARM32)/$(KERNEL_TOOLCHAIN_PREFIX_ARM32)
 endif
 
 # We need to add GCC toolchain to the path no matter what
@@ -106,7 +122,7 @@ endif
 
 # Needed for CONFIG_COMPAT_VDSO, safe to set for all arm64 builds
 ifeq ($(KERNEL_ARCH),arm64)
-   KERNEL_CROSS_COMPILE += CROSS_COMPILE_ARM32="$(KERNEL_TOOLCHAIN_arm)/$(KERNEL_TOOLCHAIN_PREFIX_arm)"
+   KERNEL_CROSS_COMPILE += CROSS_COMPILE_ARM32="$(KERNEL_TOOLCHAIN_PATH_ARM32)"
    KERNEL_CROSS_COMPILE += CROSS_COMPILE_COMPAT="$(KERNEL_TOOLCHAIN_arm)/$(KERNEL_TOOLCHAIN_PREFIX_arm)"
 endif
 
