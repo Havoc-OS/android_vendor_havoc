@@ -36,10 +36,6 @@ DEVICE_PACKAGE_OVERLAYS += vendor/havoc/overlay-pixel/common
 TARGET_SUPPORTS_GOOGLE_RECORDER ?= true
 TARGET_INCLUDE_STOCK_ARCORE ?= true
 TARGET_INCLUDE_LIVE_WALLPAPERS ?= true
-ifeq ($(TARGET_INCLUDE_LIVE_WALLPAPERS),true)
-PRODUCT_PACKAGES += \
-    PixelLiveWallpapersOverlay
-endif
 
 # TextClassifier
 PRODUCT_PACKAGES += \
