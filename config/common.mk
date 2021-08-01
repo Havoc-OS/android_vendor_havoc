@@ -233,6 +233,8 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/havoc/overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/havoc/overlay/common
 
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/havoc/config/device_framework_matrix.xml
+
 # Enable ccache
 USE_CCACHE := true
 
