@@ -133,6 +133,7 @@ PRODUCT_PACKAGES += \
     CustomDoze \
     DefaultThemesStub \
     ShadyQuickStep \
+    SoftAPManager \
     TouchGestures
 
 # Offline charger
