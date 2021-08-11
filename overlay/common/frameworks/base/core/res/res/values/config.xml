@@ -56,9 +56,6 @@
         <item>com.android.wallpaper/com.android.customization.picker.CustomizationPickerActivity</item>
     </string-array>
 
-    <string name="config_mms_user_agent">Havoc-OS</string>
-    <string name="config_mms_user_agent_profile_url">http://www.google.com/oha/rdf/ua-profile-kila.xml</string>
-
     <!-- Enable lockscreen rotation by default -->
     <bool name="config_enableLockScreenRotation">true</bool>
 
