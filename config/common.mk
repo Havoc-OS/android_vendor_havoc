@@ -132,6 +132,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     CustomDoze \
     DefaultThemesStub \
+    GamingMode \
     ShadyQuickStep \
     SoftAPManager \
     TouchGestures
