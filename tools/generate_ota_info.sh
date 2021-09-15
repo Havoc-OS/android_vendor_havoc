@@ -12,7 +12,9 @@ if [ "$1" ]; then
         romtype=$(grep ro\.havoc\.releasetype ${build_prop} | cut -d= -f2);
         variant=$(grep ro\.havoc\.build\.variant ${build_prop} | cut -d= -f2);
         variant_lower=$(echo ${variant} | tr '[:upper:]' '[:lower:]');
-        maintainer=$(grep ro\.havoc\.maintainer ${build_prop} | cut -d= -f2);
+        maintainer_firstname=$(grep ro\.havoc\.maintainer\.firstname ${build_prop} | cut -d= -f2);
+        maintainer_lastname=$(grep ro\.havoc\.maintainer\.lastname ${build_prop} | cut -d= -f2);
+        maintainer_username=$(grep ro\.havoc\.maintainer\.username ${build_prop} | cut -d= -f2);
         size=$(stat -c%s $file_path);
         datetime=$(grep ro\.build\.date\.utc ${build_prop} | cut -d= -f2);
         filehash=$(md5sum $file_path | awk '{ print $1 }');
@@ -27,7 +29,7 @@ if [ "$1" ]; then
         echo "  \"version\":\"${version}\"," >> $file_path.json
         echo "  \"romtype\":\"${romtype}\"," >> $file_path.json
         echo "  \"variant\":\"${variant}\"," >> $file_path.json
-        echo "  \"maintainer\":\"${maintainer}\"," >> $file_path.json
+        echo "  \"maintainer\":\"${maintainer_firstname} ${maintainer_lastname} (${maintainer_username})\"," >> $file_path.json
         echo "  \"size\":${size}," >> $file_path.json
         echo "  \"datetime\":${datetime}," >> $file_path.json
         echo "  \"filehash\":\"${filehash}\"," >> $file_path.json
