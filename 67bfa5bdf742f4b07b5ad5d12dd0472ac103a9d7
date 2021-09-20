@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a1d0fcf9_f533cabe",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000006
+      },
+      "writtenOn": "2021-09-20T17:21:25Z",
+      "side": 1,
+      "message": "Why not use QCOM_SOONG_NAMESPACE :\u003d hardware/qcom-caf/..\nWorks fine here",
+      "revId": "67bfa5bdf742f4b07b5ad5d12dd0472ac103a9d7",
+      "serverId": "9060a12c-e4ac-4c6f-a232-1777a55b3a69"
+    }
+  ]
+}
