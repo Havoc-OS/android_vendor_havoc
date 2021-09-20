@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a4a41dd5_7bce48d4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000006
+      },
+      "writtenOn": "2021-09-20T17:18:04Z",
+      "side": 1,
+      "message": "Please fix conflicts and upload new patch\n",
+      "revId": "e5a7adf14ad0079a9dc70d9686749fd4964527b7",
+      "serverId": "9060a12c-e4ac-4c6f-a232-1777a55b3a69"
+    }
+  ]
+}
