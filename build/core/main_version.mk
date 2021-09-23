@@ -10,7 +10,5 @@ ADDITIONAL_BUILD_PROPERTIES += \
     ro.havoc.build.variant=$(HAVOC_BUILD_VARIANT) \
     ro.havoc.build.version=$(HAVOC_BUILD_VERSION) \
     ro.havoc.fingerprint=$(HAVOC_FINGERPRINT) \
-    ro.havoc.group.url=$(HAVOC_GROUP_URL) \
-    ro.havoc.maintainer=$(HAVOC_MAINTAINER) \
     ro.havoc.releasetype=$(HAVOC_BUILD_TYPE) \
     ro.havoc.version=$(HAVOC_VERSION)

@@ -6,13 +6,14 @@ if [ "$1" ]; then
         device_name=$(echo $file_name | cut -d'-' -f5);
         build_prop="out/target/product/${device_name}/system/build.prop";
         oem=$(grep ro\.product\.system\.brand ${build_prop} | cut -d= -f2);
-        name=$(grep ro\.product\.system\.device ${build_prop} | cut -d= -f2);
-        codename=$(grep ro\.havoc\.device ${build_prop} | cut -d= -f2);
+        name=$(grep ro\.havoc\.device\.name ${build_prop} | cut -d= -f2);
+        codename=$(grep ro\.havoc\.device\= ${build_prop} | cut -d= -f2);
         version=$(grep ro\.havoc\.version ${build_prop} | cut -d= -f2);
         romtype=$(grep ro\.havoc\.releasetype ${build_prop} | cut -d= -f2);
         variant=$(grep ro\.havoc\.build\.variant ${build_prop} | cut -d= -f2);
         variant_lower=$(echo ${variant} | tr '[:upper:]' '[:lower:]');
-        maintainer=$(grep ro\.havoc\.maintainer ${build_prop} | cut -d= -f2);
+        maintainer_name=$(grep ro\.havoc\.maintainer\= ${build_prop} | cut -d= -f2);
+        maintainer_username=$(grep ro\.havoc\.maintainer\.username ${build_prop} | cut -d= -f2);
         size=$(stat -c%s $file_path);
         datetime=$(grep ro\.build\.date\.utc ${build_prop} | cut -d= -f2);
         filehash=$(md5sum $file_path | awk '{ print $1 }');
@@ -27,7 +28,8 @@ if [ "$1" ]; then
         echo "  \"version\":\"${version}\"," >> $file_path.json
         echo "  \"romtype\":\"${romtype}\"," >> $file_path.json
         echo "  \"variant\":\"${variant}\"," >> $file_path.json
-        echo "  \"maintainer\":\"${maintainer}\"," >> $file_path.json
+        echo "  \"maintainer\":\"${maintainer_name}\"," >> $file_path.json
+        echo "  \"username\":\"${maintainer_username}\"," >> $file_path.json
         echo "  \"size\":${size}," >> $file_path.json
         echo "  \"datetime\":${datetime}," >> $file_path.json
         echo "  \"filehash\":\"${filehash}\"," >> $file_path.json
