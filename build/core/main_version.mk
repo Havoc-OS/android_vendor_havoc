@@ -1,11 +1,11 @@
 # Build fingerprint
 ifneq ($(BUILD_FINGERPRINT),)
-ADDITIONAL_BUILD_PROPERTIES += \
+ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 endif
 
 # Havoc-OS System Version
-ADDITIONAL_BUILD_PROPERTIES += \
+ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.havoc.build.date=$(HAVOC_BUILD_DATE) \
     ro.havoc.build.variant=$(HAVOC_BUILD_VARIANT) \
     ro.havoc.build.version=$(HAVOC_BUILD_VERSION) \
