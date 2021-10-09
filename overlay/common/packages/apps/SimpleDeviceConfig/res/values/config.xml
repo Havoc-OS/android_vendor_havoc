@@ -80,5 +80,8 @@
 
         <!-- Select text on recents -->
         <item>device_personalization_services/Overview__enable_overview=true</item>
+
+        <!-- Use new privacy indicators for location -->
+        <item>privacy/location_indicators_enabled=true</item>
     </string-array>
 </resources>
