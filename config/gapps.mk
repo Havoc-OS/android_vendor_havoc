@@ -30,10 +30,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
 
-# Overlays
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/havoc/overlay-pixel
-DEVICE_PACKAGE_OVERLAYS += vendor/havoc/overlay-pixel/common
-
 # Pixel customization
 TARGET_SUPPORTS_GOOGLE_RECORDER ?= true
 TARGET_INCLUDE_STOCK_ARCORE ?= true
@@ -48,8 +44,31 @@ PRODUCT_PACKAGES += \
 
 # RRO Overlays
 PRODUCT_PACKAGES += \
-    FilesOverlay \
+    ShadyQuickStepGoogleOverlay \
     GoogleWallpaperPickerOverlay \
+    FilesOverlay \
     PixelDocumentsUIGoogleOverlay \
-    PixelSetupWizardAodOverlay \
-    ShadyQuickStepGoogleOverlay
+    BuiltInPrintServiceOverlay \
+    GooglePermissionControllerOverlay \
+    PixelConfigOverlayCommon \
+    TeleServiceOverlay \
+    CaptivePortalLoginOverlay \
+    GoogleWebViewOverlay \
+    SettingsGoogleOverlay \
+    TelecomOverlay \
+    CellBroadcastServiceOverlay \
+    SettingsGoogleOverlayPixel2019_midyear \
+    TelephonyProviderOverlay \
+    ContactsProviderOverlay \
+    PixelConfigOverlay2018 \
+    SettingsProviderOverlay \
+    TraceurOverlay \
+    PixelConfigOverlay2019 \
+    PixelConfigOverlay2019Midyear \
+    PixelSetupWizardOverlay \
+    PixelSetupWizardOverlay2019 \
+    PixelSetupWizardOverlayActiveEdge \
+    SystemUIGXOverlay \
+    PixelFwResOverlay \
+    GoogleConfigOverlay \
+    SystemUIGoogleOverlay
