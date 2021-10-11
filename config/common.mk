@@ -124,7 +124,6 @@ PRODUCT_PACKAGES += \
 # AOSP packages
 PRODUCT_PACKAGES += \
     ExactCalculator \
-    Exchange2 \
     Terminal \
     ThemePicker
 
