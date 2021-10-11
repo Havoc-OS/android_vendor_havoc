@@ -87,11 +87,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/havoc/config/permissions/havoc-power-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/havoc-power-whitelist.xml
 
-# TWRP
-ifeq ($(WITH_TWRP),true)
-include vendor/havoc/config/twrp.mk
-endif
-
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
