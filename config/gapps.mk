@@ -14,7 +14,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
     setupwizard.theme=glif_v3_light \
     setupwizard.feature.skip_button_use_mobile_data.carrier1839=true \
     setupwizard.feature.show_pai_screen_in_main_flow.carrier1839=false \
-    setupwizard.feature.show_pixel_tos=false
+    setupwizard.feature.show_pixel_tos=false \
+    setupwizard.feature.show_support_link_in_deferred_setup=false \
+    setupwizard.feature.device_default_dark_mode=true
 
 # StorageManager configuration
 PRODUCT_PRODUCT_PROPERTIES += \
