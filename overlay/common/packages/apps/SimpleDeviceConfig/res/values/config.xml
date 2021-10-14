@@ -42,6 +42,9 @@
         -->
         <item>input_native_boot/deep_press_enabled=false</item>
 
+        <!-- Contribute app shortcuts to centralized AppSearch index -->
+        <item>systemui/shortcut_appsearch_integration=true</item>
+
         <!--
             Device Personalization Services (AiAi)
         -->
