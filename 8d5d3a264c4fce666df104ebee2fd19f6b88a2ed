@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ee49959c_eff7eae7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000006
+      },
+      "writtenOn": "2021-10-20T20:06:37Z",
+      "side": 1,
+      "message": "Already addressed by https://review.havoc-os.com/c/Havoc-OS/android_vendor_havoc/+/287",
+      "revId": "8d5d3a264c4fce666df104ebee2fd19f6b88a2ed",
+      "serverId": "9060a12c-e4ac-4c6f-a232-1777a55b3a69"
+    }
+  ]
+}
