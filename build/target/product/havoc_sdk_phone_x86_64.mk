@@ -16,6 +16,9 @@ $(call inherit-product, build/target/product/sdk_phone_x86_64.mk)
 
 include vendor/havoc/build/target/product/havoc_generic_target.mk
 
+# Enable mainline checking
+PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := relaxed
+
 # Overrides
 PRODUCT_NAME := havoc_sdk_phone_x86_64
 PRODUCT_MODEL := Havoc-OS Android SDK built for x86_64
