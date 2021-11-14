@@ -67,9 +67,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/havoc/config/permissions/havoc-sysconfig.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/havoc-sysconfig.xml
 
-# Copy all Havoc-specific init rc files
-$(foreach f,$(wildcard vendor/havoc/prebuilt/common/etc/init/*.rc),\
-	$(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_SYSTEM)/etc/init/$(notdir $f)))
+# Havoc-specific init rc file
+PRODUCT_COPY_FILES += \
+    vendor/havoc/prebuilt/common/etc/init/init.havoc.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.havoc.rc
+    vendor/havoc/prebuilt/common/etc/init/init.havoc-system.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.havoc-system.rc
 
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
@@ -130,6 +131,9 @@ PRODUCT_PACKAGES += \
     SoftAPManager \
     TouchGestures
 
+PRODUCT_COPY_FILES += \
+    vendor/havoc/prebuilt/common/etc/init/init.havoc-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.havoc-updater.rc
+
 # Offline charger
 PRODUCT_PACKAGES += \
     charger_res_images \
@@ -168,6 +172,9 @@ PRODUCT_PACKAGES += \
     sshd_config \
     ssh-keygen \
     start-ssh
+
+PRODUCT_COPY_FILES += \
+    vendor/havoc/prebuilt/common/etc/init/init.openssh.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.openssh.rc
 
 # rsync
 PRODUCT_PACKAGES += \
