@@ -65,7 +65,7 @@ PRODUCT_COPY_FILES += \
 
 # Havoc-specific broadcast actions whitelist
 PRODUCT_COPY_FILES += \
-    vendor/havoc/config/permissions/havoc-sysconfig.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/havoc-sysconfig.xml
+    vendor/havoc/config/permissions/havoc-sysconfig.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/havoc-sysconfig.xml
 
 # Havoc-specific init rc file
 PRODUCT_COPY_FILES += \
@@ -74,11 +74,11 @@ PRODUCT_COPY_FILES += \
 
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
-    vendor/havoc/config/permissions/android.software.nfc.beam.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.nfc.beam.xml
+    vendor/havoc/config/permissions/android.software.nfc.beam.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.software.nfc.beam.xml
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.sip.voip.xml
+    frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.software.sip.voip.xml
 
 # Enable wireless Xbox 360 controller support
 PRODUCT_COPY_FILES += \
@@ -86,7 +86,7 @@ PRODUCT_COPY_FILES += \
 
 # Power whitelist
 PRODUCT_COPY_FILES += \
-    vendor/havoc/config/permissions/havoc-power-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/havoc-power-whitelist.xml
+    vendor/havoc/config/permissions/havoc-power-whitelist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/havoc-power-whitelist.xml
 
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
