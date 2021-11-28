@@ -1,6 +1,7 @@
 # Apps
 PRODUCT_PACKAGES += \
-    ShadyQuickStepAOSPOverlay
+    ShadyQuickStepAOSPOverlay \
+    UpdaterOverlay
 
 # Accents
 PRODUCT_PACKAGES += \
