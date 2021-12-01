@@ -1,5 +1,6 @@
 # Apps
 PRODUCT_PACKAGES += \
+    GamingModeOverlay \
     ShadyQuickStepAOSPOverlay \
     UpdaterOverlay
 
