@@ -74,8 +74,8 @@ PRODUCT_COPY_FILES += \
 
 # Havoc-specific init rc file
 PRODUCT_COPY_FILES += \
-    vendor/havoc/prebuilt/common/etc/init/init.havoc.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.havoc.rc \
-    vendor/havoc/prebuilt/common/etc/init/init.havoc-system.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.havoc-system.rc
+    vendor/havoc/prebuilt/common/etc/init/init.havoc.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.havoc.rc \
+    vendor/havoc/prebuilt/common/etc/init/init.havoc-system_ext.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.havoc-system_ext.rc
 
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
