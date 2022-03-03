@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_arm.mk \
-    $(LOCAL_DIR)/havoc_arm64.mk \
-    $(LOCAL_DIR)/havoc_x86.mk \
-    $(LOCAL_DIR)/havoc_x86_64.mk \
-    $(LOCAL_DIR)/havoc_sdk_phone_x86.mk \
-    $(LOCAL_DIR)/havoc_sdk_phone_x86_64.mk
+    $(LOCAL_DIR)/havoc_gsi_arm.mk \
+    $(LOCAL_DIR)/havoc_gsi_arm64.mk \
+    $(LOCAL_DIR)/havoc_gsi_x86.mk \
+    $(LOCAL_DIR)/havoc_gsi_x86_64.mk \
+    $(LOCAL_DIR)/havoc_gsi_sdk_phone_x86.mk \
+    $(LOCAL_DIR)/havoc_gsi_sdk_phone_x86_64.mk
