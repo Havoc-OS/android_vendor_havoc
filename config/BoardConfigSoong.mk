@@ -44,7 +44,8 @@ SOONG_CONFIG_havocGlobalVars += \
     target_process_sdk_version_override \
     target_surfaceflinger_udfps_lib \
     target_uses_prebuilt_dynamic_partitions \
-    uses_camera_parameter_lib
+    uses_camera_parameter_lib \
+    uses_egl_display_array
 
 ifneq ($(TARGET_FORCE_BUILD_FINGERPRINT),)
 SOONG_CONFIG_havocGlobalVars += force_build_fingerprint
@@ -86,6 +87,7 @@ SOONG_CONFIG_havocQcomVars_should_wait_for_qsee := $(TARGET_KEYMASTER_WAIT_FOR_Q
 SOONG_CONFIG_havocQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
 SOONG_CONFIG_havocQcomVars_supports_hw_fde := $(TARGET_HW_DISK_ENCRYPTION)
 SOONG_CONFIG_havocQcomVars_supports_hw_fde_perf := $(TARGET_HW_DISK_ENCRYPTION_PERF)
+SOONG_CONFIG_havocGlobalVars_uses_egl_display_array := $(TARGET_USES_EGL_DISPLAY_ARRAY)
 SOONG_CONFIG_havocQcomVars_uses_pre_uplink_features_netmgrd := $(TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD)
 SOONG_CONFIG_havocQcomVars_uses_qcom_bsp_legacy := $(TARGET_USES_QCOM_BSP_LEGACY)
 
