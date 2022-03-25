@@ -20,8 +20,6 @@ Additional Havoc-OS functions:
 EOF
 }
 
-alias mka=m
-
 function mk_timer()
 {
     local start_time=$(date +"%s")
@@ -396,6 +394,10 @@ function makerecipe() {
     sed -i s/'default revision=.*'/'default revision="refs\/heads\/'$1'"'/ default.xml
     git commit -a -m "$1"
     cd ..
+}
+
+function mka() {
+    m
 }
 
 function cmka() {
