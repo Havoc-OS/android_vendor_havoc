@@ -52,7 +52,7 @@ endif
 
 SOONG_CONFIG_NAMESPACES += havocNvidiaVars
 SOONG_CONFIG_havocNvidiaVars += \
-    uses_nv_enhancements
+    uses_nvidia_enhancements
 
 SOONG_CONFIG_NAMESPACES += havocQcomVars
 SOONG_CONFIG_havocQcomVars += \
@@ -81,7 +81,7 @@ SOONG_CONFIG_havocGlobalVars_ignores_ftp_pptp_conntrack_failure := $(TARGET_IGNO
 SOONG_CONFIG_havocGlobalVars_needs_camera_boottime := $(TARGET_CAMERA_BOOTTIME_TIMESTAMP)
 SOONG_CONFIG_havocGlobalVars_needs_netd_direct_connect_rule := $(TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE)
 SOONG_CONFIG_havocGlobalVars_target_uses_prebuilt_dynamic_partitions := $(TARGET_USES_PREBUILT_DYNAMIC_PARTITIONS)
-SOONG_CONFIG_havocNvidiaVars_uses_nv_enhancements := $(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)
+SOONG_CONFIG_havocNvidiaVars_uses_nvidia_enhancements := $(NV_ANDROID_FRAMEWORK_ENHANCEMENTS)
 SOONG_CONFIG_havocQcomVars_legacy_hw_disk_encryption := $(TARGET_LEGACY_HW_DISK_ENCRYPTION)
 SOONG_CONFIG_havocQcomVars_should_wait_for_qsee := $(TARGET_KEYMASTER_WAIT_FOR_QSEE)
 SOONG_CONFIG_havocQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
