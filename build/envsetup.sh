@@ -397,7 +397,7 @@ function makerecipe() {
 }
 
 function mka() {
-    m
+    m "$@"
 }
 
 function cmka() {
