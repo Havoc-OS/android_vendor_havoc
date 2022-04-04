@@ -93,6 +93,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/havoc/config/permissions/havoc-power-whitelist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/havoc-power-whitelist.xml
 
+# Disable remote keyguard animation
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.wm.enable_remote_keyguard_animation=0
+
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
