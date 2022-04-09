@@ -279,6 +279,9 @@ $(call inherit-product, vendor/havoc/config/fonts.mk)
 # RRO Overlays
 $(call inherit-product, vendor/havoc/config/rro_overlays.mk)
 
+# Themed icons
+$(call inherit-product, packages/overlays/ThemeIcons/config.mk)
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/havoc/config/partner_gms.mk
 -include vendor/havoc/config/version.mk
