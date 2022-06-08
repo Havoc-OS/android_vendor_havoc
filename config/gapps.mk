@@ -48,6 +48,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ShadyQuickStepGoogleOverlay \
     GoogleWallpaperPickerOverlay \
+    PixelLauncherCustomOverlay \
     PixelDocumentsUIGoogleOverlay \
     BuiltInPrintServiceOverlay \
     GooglePermissionControllerOverlay \
