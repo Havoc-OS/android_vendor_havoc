@@ -1,11 +1,3 @@
-# Apps
+# RRO Overlays
 PRODUCT_PACKAGES += \
-    GamingModeOverlay \
-    ImmersiveNavigationOverlay \
-    ShadyQuickStepAOSPOverlay \
-    UpdaterOverlay
-
-# Cutout Control
-PRODUCT_PACKAGES += \
-    HideCutout \
-    StatusBarStock
+    ImmersiveNavigationOverlay

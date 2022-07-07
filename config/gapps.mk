@@ -46,7 +46,6 @@ PRODUCT_PACKAGES += \
 
 # RRO Overlays
 PRODUCT_PACKAGES += \
-    ShadyQuickStepGoogleOverlay \
     GoogleWallpaperPickerOverlay \
     PixelLauncherCustomOverlay \
     PixelDocumentsUIGoogleOverlay \
