@@ -104,3 +104,14 @@ else
     PRODUCT_PACKAGES += \
         SettingsGoogleFutureFaceEnroll
 endif
+
+# Pixel customization
+TARGET_SUPPORTS_GOOGLE_RECORDER ?= true
+TARGET_INCLUDE_STOCK_ARCORE ?= true
+TARGET_INCLUDE_LIVE_WALLPAPERS ?= true
+TARGET_SUPPORTS_QUICK_TAP ?= false
+TARGET_SUPPORTS_CALL_RECORDING ?= true
+
+# GApps
+$(call inherit-product-if-exists, vendor/gms/products/gms.mk)
+$(call inherit-product-if-exists, vendor/googleapps/googleapps.mk)
