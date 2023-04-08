@@ -3,7 +3,6 @@ $(call inherit-product, vendor/lineage/config/common.mk)
 
 # Apps
 PRODUCT_PACKAGES += \
-    Backgrounds \
     ExactCalculator \
     Jelly
 
