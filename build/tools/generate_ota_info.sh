@@ -18,7 +18,7 @@ if [ "$1" ]; then
         datetime=$(grep ro\.build\.date\.utc ${build_prop} | cut -d= -f2);
         filehash=$(md5sum $file_path | awk '{ print $1 }');
         id=$(sha256sum $file_path | awk '{ print $1 }');
-        url="https://download.havoc-os.com/${device_name}/${file_name}";
+        url="https://sourceforge.net/projects/havoc-os/files/${device_name}/${file_name}/download";
         group=$(grep ro\.havoc\.group\.url ${build_prop} | cut -d= -f2);
         echo "{" > $file_path.json
         echo "  \"oem\":\"${oem}\"," >> $file_path.json

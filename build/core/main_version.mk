@@ -8,7 +8,9 @@ endif
 ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.havoc.build.date=$(HAVOC_BUILD_DATE) \
     ro.havoc.build.version=$(LINEAGE_VERSION) \
+    ro.havoc.build.variant=$(HAVOC_BUILD_VARIANT) \
     ro.havoc.display.version=$(LINEAGE_DISPLAY_VERSION) \
+    ro.havoc.releasetype=$(HAVOC_BUILD_TYPE) \
     ro.havoc.version=$(HAVOC_VERSION) \
     ro.havoclegal.url=https://havoc-os.com/privacy
 
