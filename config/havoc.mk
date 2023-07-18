@@ -1,3 +1,15 @@
+# Audio
+$(call inherit-product, vendor/lineage/config/audio.mk)
+
+# Fonts
+$(call inherit-product, vendor/lineage/config/fonts.mk)
+
+# Themed icons
+$(call inherit-product, packages/overlays/ThemeIcons/config.mk)
+
+# Pixel Framework
+$(call inherit-product, vendor/pixel-framework/config.mk)
+
 # Additional props
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     drm.service.enabled=true \
@@ -27,12 +39,12 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Blurs
 ifeq ($(TARGET_ENABLE_BLUR), true)
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    ro.sf.blurs_are_expensive=1 \
-    ro.surface_flinger.supports_background_blur=1
+    PRODUCT_SYSTEM_EXT_PROPERTIES += \
+        ro.sf.blurs_are_expensive=1 \
+        ro.surface_flinger.supports_background_blur=1
 else
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.launcher.blur.appLaunch=0
+    PRODUCT_PRODUCT_PROPERTIES += \
+        ro.launcher.blur.appLaunch=0
 endif
 
 # Disable async MTE on system_server
@@ -47,3 +59,34 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
 PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
+
+# Gboard configuration
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.com.google.ime.theme_id=5 \
+    ro.com.google.ime.system_lm_dir=/product/usr/share/ime/google/d3_lms
+
+# StorageManager configuration
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.storage_manager.show_opt_in=false
+
+# OPA configuration
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.opa.eligible_device=true
+
+# Google legal
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
+    ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html
+
+# Google Play services configuration
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.error.receiver.system.apps=com.google.android.gms \
+    ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent
+
+# Use gestures by default
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
+
+# Repainter integration
+PRODUCT_PACKAGES += \
+    RepainterServicePriv
